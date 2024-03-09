@@ -1,13 +1,15 @@
+
 .websiteContainer {
- position: relative;
- width: 80%;
- height: 60%;
- background-image: url('../assets/MacbookPro.png');
- background-size: cover;
-background-repeat: no-repeat;
+  position: relative;
+  width: 85%; /* Adjust this to what suits your design */
+  margin: auto; /* Center the container */
+  /* Use padding-top to maintain the aspect ratio for height */
+  padding-top: calc(85% / 1.645);
+  background: url('../assets/MacbookPro.png') no-repeat center center;
+  background-size: contain; /* Make sure the image is scaled properly */
 }
 
-.iframeContainer {
+/* .iframeContainer {
   position: absolute;
   top: 8px; 
   left: 66px; 
@@ -21,4 +23,23 @@ iframe {
   width: 100%;
   height: 100%;
   border: none; 
+} */
+
+.iframeContainer {
+  position: absolute;
+  /* These values depend on the MacBook image's screen position */
+  top: 2.2%;
+  left: 10.3%;
+  width: 79.5%;
+  height: 87%;
+  /* background: white; */
+}
+
+/* The iframe CSS should be adjusted if necessary */
+iframe {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
