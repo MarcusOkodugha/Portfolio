@@ -1,0 +1,47 @@
+
+.scroll-button-left,
+.scroll-button-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 55%;
+  z-index: 1000; /* Make sure this is above all other elements */
+  width: 5rem; /* Set a fixed width */
+  height: 5rem; /* Set a fixed height */
+  background-color: #ffffffb4; /* Or any color you want */
+  border-radius: 50%; /* Make it circular */
+  border: none; 
+  outline: none !important;
+  cursor: pointer;
+  transform: translateY(-50%); /* Center it vertically */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.scroll-button-left{
+    position: absolute; 
+    transform: translateY(-50%); 
+    z-index: 2;
+}
+
+
+.scroll-button-right{
+    position: absolute; 
+    transform: translateY(-50%); 
+    z-index: 2;
+    left: 95%; 
+}
+
+.scroll-button-left:focus,
+.scroll-button-right:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5); 
+}
+
+.projectsRow:hover .scroll-button-left,
+.projectsRow:hover .scroll-button-right {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}

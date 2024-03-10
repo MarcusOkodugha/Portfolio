@@ -13,10 +13,8 @@ function ProjectContainer(props: ProjectContainerProps){
             <Card>
 
             <div style={{fontSize:"",fontFamily:"arial", fontWeight:"", opacity:"0.5"}} >Cloud Saver</div>
-            <div style={{fontSize:"x-large", fontFamily:"arial", fontWeight:""}}>Elevate Your Cloud Economy</div>
-                    <div className='projectContainer'>
+            <div style={{fontSize:"x-large", fontFamily:"arial", fontWeight:"", paddingBottom:"2rem"}}>Elevate Your Cloud Economy</div>
                         <WebsiteContainer link={props.link}></WebsiteContainer>
-                    </div>
             </Card>
         </div>
     )

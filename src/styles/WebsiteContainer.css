@@ -1,29 +1,21 @@
+/* 
+.websiteContainer {
+  position: relative;
+  width: 85%; 
+  margin: auto; 
+  padding-top: calc(85% / 1.645);
+  background: url('../assets/MacbookPro.png') no-repeat center center;
+  background-size: contain; 
+} */
 
 .websiteContainer {
   position: relative;
-  width: 85%; /* Adjust this to what suits your design */
-  margin: auto; /* Center the container */
-  /* Use padding-top to maintain the aspect ratio for height */
-  padding-top: calc(85% / 1.645);
+  width: 100%;
+  margin: auto;
+  padding-top: 60.79%; /* Maintains the aspect ratio of 1:1.645 */
   background: url('../assets/MacbookPro.png') no-repeat center center;
   background-size: contain; /* Make sure the image is scaled properly */
 }
-
-/* .iframeContainer {
-  position: absolute;
-  top: 8px; 
-  left: 66px; 
-  width: 637px;
-  height: 566px;
-}
-
-iframe {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 100%;
-  height: 100%;
-  border: none; 
-} */
 
 .iframeContainer {
   position: absolute;
@@ -39,7 +31,9 @@ iframe {
 iframe {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  width: 100%;
-  height: 100%;
+  width: 285.7%;
+  height: 285.7%;
+  transform: scale(0.35);
+  transform-origin: 0 0;
   border: none;
 }

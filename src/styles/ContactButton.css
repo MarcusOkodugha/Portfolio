@@ -1,0 +1,12 @@
+.contact-button{
+    background-color: red;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid black; 
+    margin-top: 2rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: white;
+}
