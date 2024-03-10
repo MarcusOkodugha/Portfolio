@@ -3,7 +3,7 @@ import './styles/App.css'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 import ProjectContainer from './components/ProjectContainer'
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import ScrollButton from './components/ScrollButton';
 import './styles/ScrollButton.css';
 import ContactButton from './components/ContactButton';

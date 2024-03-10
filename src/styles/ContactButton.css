@@ -10,4 +10,17 @@
     padding-bottom: 1.5rem;
     color: white;
     transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+    position: relative;
 }
+
+
+.contact-button {
+    transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+    /* When the button is not hovering, allow pointer events */
+    pointer-events: auto;
+  }
+  
+  .contact-button.hovering {
+    /* When the button is hovering, disable pointer events */
+    pointer-events: none;
+  }

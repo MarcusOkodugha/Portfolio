@@ -19,7 +19,7 @@ function ToggleDarkMode(): React.ReactElement{
 
     return(
         <div>
-        <button className="toggle-dark-mode" style={{backgroundColor: "transparent", outline: "none", border: "none"}} onClick={toggleDarkMode}>
+        <button style={{backgroundColor: "transparent", outline: "none", border: "none"}} onClick={toggleDarkMode}>
           <span className="material-symbols-outlined" style={{ color: darkMode ? "white" : "black" }}>
             {darkMode ? 'light_mode' : 'night_sight_max'}
           </span>
