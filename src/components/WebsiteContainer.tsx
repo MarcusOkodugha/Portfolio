@@ -1,7 +1,7 @@
 import '../styles/WebsiteContainer.css';
 
 type WebsiteContainerProps = {
-    link: string;
+    link?: string;
 }
 
 function WebsiteContainer(props: WebsiteContainerProps){

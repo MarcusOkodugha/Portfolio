@@ -13,7 +13,7 @@
   width: 100%;
   margin: auto;
   padding-top: 60.79%; /* Maintains the aspect ratio of 1:1.645 */
-  background: url('../assets/MacbookPro.png') no-repeat center center;
+  background: url('./assets/MacbookPro.png') no-repeat center center;
   background-size: contain; /* Make sure the image is scaled properly */
 }
 

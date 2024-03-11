@@ -65,61 +65,114 @@
 // export default ContactButton;
 
 
-import { useState, useEffect, useRef } from 'react';
-import "../styles/ContactButton.css"
+// import { useState, useEffect, useRef } from 'react';
+// import "../styles/ContactButton.css"
 
+
+// function ContactButton() {
+//     const [isHovering, setIsHovering] = useState(false);
+//     const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
+//     const buttonRef = useRef<HTMLButtonElement>(null);
+
+//     useEffect(() => {
+//         function handleMouseMove(event: MouseEvent) {
+//             const button = buttonRef.current;
+//             if (button) {
+//                 const { left, top, width, height } = button.getBoundingClientRect();
+//                 const mouseX = event.clientX;
+//                 const mouseY = event.clientY;
+
+//                 const buttonCenterX = left + width / 2;
+//                 const buttonCenterY = top + height / 2;
+
+//                 const xDistance = mouseX - buttonCenterX;
+//                 const yDistance = mouseY - buttonCenterY;
+
+//                 const distance = Math.sqrt(xDistance * xDistance + yDistance * yDistance);
+                
+//                 if (distance < 100) {
+//                     setButtonPosition({ 
+//                         top: (mouseY - height / 2)-17,
+//                         left: mouseX - width / 2
+//                     });
+//                     setIsHovering(true);
+//                 } else {
+//                     setIsHovering(false);
+//                 }
+//             }
+//         }
+
+//         window.addEventListener('mousemove', handleMouseMove);
+
+//         return () => {
+//             window.removeEventListener('mousemove', handleMouseMove);
+//         };
+//     }, []);
+
+//     return (
+//         <button
+//             ref={buttonRef}
+//             className="contact-button"
+//             style={{
+//                 position: isHovering ? 'fixed' : 'static',
+//                 top: isHovering ? buttonPosition.top : undefined,
+//                 left: isHovering ? buttonPosition.left : undefined,
+//                 transition: 'top 0.5s, left 0.5s',
+//             }}
+//         >
+//             LET'S TALK
+//         </button>
+//     );
+// }
+
+// export default ContactButton;
+
+import  {  useEffect, useRef } from 'react';
+import "../styles/ContactButton.css";
 
 function ContactButton() {
-    const [isHovering, setIsHovering] = useState(false);
-    const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
+    // const [ setIsHovering] = useState(false);
     const buttonRef = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
-        function handleMouseMove(event: MouseEvent) {
+        const handleMouseMove = (event: MouseEvent) => {
             const button = buttonRef.current;
             if (button) {
                 const { left, top, width, height } = button.getBoundingClientRect();
+                const buttonCenterX = left + width / 2;
+                const buttonCenterY = top + height / 2;
                 const mouseX = event.clientX;
                 const mouseY = event.clientY;
 
-                const buttonCenterX = left + width / 2;
-                const buttonCenterY = top + height / 2;
-
+                // Calculate distance from the center of the button to the cursor
                 const xDistance = mouseX - buttonCenterX;
                 const yDistance = mouseY - buttonCenterY;
+                const distance = Math.sqrt(xDistance ** 2 + yDistance ** 2);
 
-                const distance = Math.sqrt(xDistance * xDistance + yDistance * yDistance);
-                
+                // Check if the cursor is within 100px of the button's center
+                // setIsHovering(distance < 100);
+
+                // If within 100px, position the button with the cursor at its center
                 if (distance < 100) {
-                    setButtonPosition({ 
-                        top: (mouseY - height / 2)-17,
-                        left: mouseX - width / 2
-                    });
-                    setIsHovering(true);
+                    button.style.position = 'fixed';
+                    button.style.left = `${mouseX - width / 2}px`;
+                    button.style.top = `${mouseY - height / 2}px`;
+                    button.style.transition = 'none';  // Remove transition for instant follow
                 } else {
-                    setIsHovering(false);
+                    button.style.position = 'static';
+                    button.style.transition = 'top 0.5s, left 0.5s'; // Reapply transition for smooth return
                 }
             }
-        }
+        };
 
         window.addEventListener('mousemove', handleMouseMove);
-
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
 
     return (
-        <button
-            ref={buttonRef}
-            className="contact-button"
-            style={{
-                position: isHovering ? 'fixed' : 'static',
-                top: isHovering ? buttonPosition.top : undefined,
-                left: isHovering ? buttonPosition.left : undefined,
-                transition: 'top 0.5s, left 0.5s',
-            }}
-        >
+        <button ref={buttonRef} className="contact-button">
             LET'S TALK
         </button>
     );
