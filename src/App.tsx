@@ -81,12 +81,12 @@ function App() {
             "As organizations continue to adopt cloud-native applications, with a recorded 96% either using or evaluating Kubernetes and 93% utilizing containers in production, tools like CloudSaver are not just beneficial but necessary. These technologies offer a proactive approach to managing the ever-growing energy footprint of cloud services while fostering cost-effective and environmentally conscious cloud operations.\n\n"+
             "With CloudSaver, enterprises can look forward to not only substantial cost savings but also an enhanced understanding of their cloud operations, a critical factor as businesses increasingly prioritize cloud-native security and multi-cloud strategies.",
             technologies: [
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
             ]
           })}
       
