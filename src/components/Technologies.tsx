@@ -12,7 +12,7 @@ const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
       {technologies.map((tech, index) => (
         <div key={index} className="technology-item">
           <img src={tech.imgPath} alt={tech.title} className="technology-icon" />
-          <span className="technology-title">{tech.title}</span>
+          <span style={{fontSize:"large"}} className="technology-title">{tech.title}</span>
         </div>
       ))}
     </div>
