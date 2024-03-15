@@ -49,10 +49,17 @@ function App() {
         <DetailedProjectView 
           title={selectedProject.title}
           link={selectedProject.link}
+          gitLink={selectedProject.gitLink}
+          downloadLink={selectedProject.downloadLink}
           description={selectedProject.description}
           longDescription={selectedProject.longDescription}
           close={closeDialog}
           technologies={selectedProject.technologies}
+          useWebsiteContainer={selectedProject.useWebsiteContainer}
+          showImage={selectedProject.showImage}
+          imgPath={selectedProject.imgPath}
+          imgWidth={selectedProject.imgWidth}
+
         />
       )}
  
@@ -65,15 +72,11 @@ function App() {
           title="Cloud Saver"
           link="https://mvk-cloudsaver-frontend-eg58.vercel.app/"
           description="Elevate Your Cloud Economy"
-          longDescription= {"CloudSaver: Harnessing Kubernetes for Efficient Cloud Management\n\n"+
-          "In an era where cloud infrastructure is paramount, CloudSaver emerges as an essential service for optimizing cloud performance and energy consumption. This innovative platform, designed for the Kubernetes ecosystem—which powers a significant majority of cloud deployments—offers a seamless and scalable solution to monitor and manage cloud usage effectively.\n\n"+
-          "CloudSaver utilizes a robust backend built with Python, deployed as a containerized application within the cloud environment. This backend tirelessly gathers usage data, which is then stored securely in MongoDB, ensuring that performance metrics are always current and actionable. The Node.js server acts as the bridge, fetching and relaying this vital data to the frontend.\n\n"+
-          "On the user-facing side, CloudSaver's intuitive interface, crafted with Vue.js, presents users with real-time insights into their cloud infrastructure's efficiency. Users are guided through a straightforward, step-by-step deployment process, enabling quick setup and immediate value from detailed consumption analytics.\n\n"+
-          "As organizations continue to adopt cloud-native applications, with a recorded 96% either using or evaluating Kubernetes and 93% utilizing containers in production, tools like CloudSaver are not just beneficial but necessary. These technologies offer a proactive approach to managing the ever-growing energy footprint of cloud services while fostering cost-effective and environmentally conscious cloud operations.\n\n"+
-          "With CloudSaver, enterprises can look forward to not only substantial cost savings but also an enhanced understanding of their cloud operations, a critical factor as businesses increasingly prioritize cloud-native security and multi-cloud strategies."}
+          longDescription= {""}
           onClick={() => openDialog({
             title: 'Cloud Saver',
             link: 'https://mvk-cloudsaver-frontend-eg58.vercel.app/',
+            gitLink: 'https://github.com/KTH-awaken/mvk-cloudsaver-frontend',
             description: "Cloud Saver Harnessing Kubernetes for Efficient Cloud Management",
             longDescription: "In an era where cloud infrastructure is paramount, CloudSaver emerges as an essential service for optimizing cloud performance and energy consumption. This innovative platform, designed for the Kubernetes ecosystem—which powers a significant majority of cloud deployments—offers a seamless and scalable solution to monitor and manage cloud usage effectively.\n\n"+
             "CloudSaver utilizes a robust backend built with Python, deployed as a containerized application within the cloud environment. This backend tirelessly gathers usage data, which is then stored securely in MongoDB, ensuring that performance metrics are always current and actionable. The Node.js server acts as the bridge, fetching and relaying this vital data to the frontend.\n\n"+
@@ -83,28 +86,64 @@ function App() {
             technologies: [
               {imgPath: "../assets/Vue.png", title: "Vue.js"},
               {imgPath: "../assets/ts.png", title: "TypeScript"},
-              // {imgPath: "../assets/ts.png", title: "TypeScript"},
-              // {imgPath: "../assets/ts.png", title: "TypeScript"},
-              // {imgPath: "../assets/ts.png", title: "TypeScript"},
-              // {imgPath: "../assets/ts.png", title: "TypeScript"},
-            ]
+              {imgPath: "../assets/mongodb.jpg", title: "MongoDB"},
+              {imgPath: "../assets/nodejs.jpg", title: "Node.js"},
+              {imgPath: "../assets/tailwind.jpg", title: "Tailwind"},
+              {imgPath: "../assets/github-actions.jpg", title: "GitHub Actions"},
+              {imgPath: "../assets/kubernets.jpg", title: "Kubernetes"},
+              {imgPath: "../assets/docker.jpg", title: "Docker"},
+              {imgPath: "../assets/Python-logo-notext.svg.png", title: "Python"},
+              {imgPath: "../assets/Firebase_icon.svg.png", title: "Firebase"},
+
+
+            ],
+            useWebsiteContainer: true,
+            showImage: false,
           })}
-      
+          useWebsiteContainer={true}
+          showImage={false}
           >
           </ProjectContainer>
 
         
-          <ProjectContainer 
+          {/* <ProjectContainer 
             title='Health Hive'
             link=' '
             description='Where Health Lives'
             >
-          </ProjectContainer>
-          <ProjectContainer 
-            title='Campus'
-            link=' '
-            description='Chat And Find Your Friends On Campus'
-            >
+          </ProjectContainer> */}
+          <ProjectContainer
+          title="Campus"
+          link=""
+          gitLink='https://github.com/KTH-awaken/Campus'
+          downloadLink='https://ufile.io/rcnsbl4l'
+          description="Chat And Find Your Friends On Campus"
+          longDescription= {""}
+          onClick={() => openDialog({
+            title: 'Campus',
+            link: '',
+            gitLink: 'https://github.com/KTH-awaken/Campus',
+            downloadLink: 'https://ufile.io/rcnsbl4l',
+            description: "Chat And Find Your Friends On Campus",
+            longDescription: "",
+            technologies: [
+              {imgPath: "../assets/Vue.png", title: "Vue.js"},
+              {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+              // {imgPath: "../assets/ts.png", title: "TypeScript"},
+            ],
+            useWebsiteContainer: false,
+            showImage:true,
+            imgPath: '../assets/Campus.png',
+            imgWidth: "90%",
+          })}
+          useWebsiteContainer={false}
+          showImage={true}
+          imgPath='../assets/Campus.png'
+          imgWidth='90%'
+          >
           </ProjectContainer>
         </div>
           <Navbar></Navbar>

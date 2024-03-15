@@ -4,6 +4,12 @@ export type ProjectContainerProps = {
     description?: string;
     longDescription?: string;
     technologies?: TechnologyProps[];
+    useWebsiteContainer?: boolean;
+    showImage?: boolean;
+    imgPath?: string;
+    imgWidth?: string;
+    gitLink?: string;
+    downloadLink?: string;
 };  
 
 export type TechnologyProps = {

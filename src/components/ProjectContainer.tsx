@@ -5,7 +5,6 @@ import { ProjectContainerProps } from '../types';
 
 interface ProjectContainerExtendedProps extends ProjectContainerProps {
     onClick?: () => void;
-
 }
 
 
@@ -18,7 +17,7 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
       }
 
       return (
-        <div onClick={handleClick}> {/* Use the regular function here */}
+        <div onClick={handleClick}>
           <Card>
             <div style={{fontSize: "", fontFamily: "arial", fontWeight: "", opacity: "0.5"}} >
               {props.title}
@@ -26,7 +25,12 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
             <div style={{fontSize: "x-large", fontFamily: "arial", fontWeight: "", paddingBottom: "2rem"}}>
               {props.description}
             </div>
-            {props.link && <WebsiteContainer link={props.link}></WebsiteContainer>}
+            {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
+            {props.showImage && 
+            <div style={{display:"flex", width:"100%",  justifyContent: "center" }}>
+              <img src={props.imgPath} alt={props.title} style={{width: "60%", height: "auto"}}></img>
+            </div>
+            }
           </Card>
         </div>
       );
