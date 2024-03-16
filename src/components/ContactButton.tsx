@@ -31,13 +31,13 @@ function ContactButton() {
 
                 // If within 100px, position the button with the cursor at its center
                 if (distance < 100) {
-                    button.style.position = 'fixed';
-                    button.style.left = `${mouseX - width / 2}px`;
-                    button.style.top = `${mouseY - height / 2}px`;
-                    button.style.transition = 'none';  // Remove transition for instant follow
+                    // button.style.position = 'fixed';
+                    // button.style.left = `${mouseX - width / 2}px`;
+                    // button.style.top = `${mouseY - height / 2}px`;
+                    // button.style.transition = 'none';  // Remove transition for instant follow
                 } else {
-                    button.style.position = 'static';
-                    button.style.transition = 'top 0.5s, left 0.5s'; // Reapply transition for smooth return
+                    // button.style.position = 'static';
+                    // button.style.transition = 'top 0.5s, left 0.5s'; // Reapply transition for smooth return
                 }
             }
         };
