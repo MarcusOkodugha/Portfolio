@@ -10,6 +10,7 @@ import ContactButton from './components/ContactButton';
 import { DarkModeProvider } from './contexts/DarkModeContext';
 import { ProjectContainerProps } from './types';
 import DetailedProjectView from './components/DetailedProjectView';
+import CvContainer from './components/CvContainer';
 
 
 function App() {
@@ -104,14 +105,6 @@ function App() {
           showImage={false}
           >
           </ProjectContainer>
-
-        
-          {/* <ProjectContainer 
-            title='Health Hive'
-            link=' '
-            description='Where Health Lives'
-            >
-          </ProjectContainer> */}
           <ProjectContainer
           title="Campus"
           link=""
@@ -125,10 +118,23 @@ function App() {
             gitLink: 'https://github.com/KTH-awaken/Campus',
             downloadLink: 'https://ufile.io/rcnsbl4l',
             description: "Chat And Find Your Friends On Campus",
-            longDescription: "",
+            longDescription: "Campus is an innovative mobile application designed to enhance the university experience for students by providing a social platform to locate friends and colleagues on campus. Developed using Kotlin for Android, the app integrates Firebase for robust back-end services and Google Maps for precise location tracking, offering a seamless and intuitive user interface.\n\n"+
+                              "Key Features:\n"+
+                              "- Real-time Location Sharing: Students can effortlessly share their current location with friends, making it simple to find companions in sprawling campus environments.\n"+
+                              "- Customizable Rooms: Campus facilitates the creation of custom rooms or study groups, allowing students to join and manage their study sessions or social meetups.\n"+
+                              "- Interactive Campus Maps: Leveraging Google Maps, the application provides detailed maps of university campuses, guiding users to their desired locations.\n"+
+                              "- Simplified Communication: The app features a built-in messaging system, enabling users to coordinate and chat within the platform.\n\n"+
+                              "Development and Technologies:\n"+
+                              "- Crafted with Kotlin, Campus stands out for its smooth performance and reliability on Android devices.\n"+
+                              "- Firebase serves as the backbone for real-time data synchronization, user authentication, and database management.\n"+
+                              "- Google Maps is expertly integrated to deliver accurate geolocation services and mapping.\n\n"+
+                              "Availability:\n"+
+                              "Campus is available for download on Android devices, offering a tailored experience for each university setup. By simplifying the way students connect and navigate their campus, Campus has become an indispensable tool for the modern, connected student.\n\n"+
+                              "Download Campus and discover a smarter way to campus life today.",
             technologies: [
-              {imgPath: "../assets/Vue.png", title: "Vue.js"},
-              {imgPath: "../assets/ts.png", title: "TypeScript"},
+              {imgPath: "../assets/Kotlin.png", title: "Kotlin"},
+              {imgPath: "../assets/Firebase_icon.svg.png", title: "Firebase"},
+              {imgPath: "../assets/GoogleMaps.png", title: "Google Maps"},
               // {imgPath: "../assets/ts.png", title: "TypeScript"},
               // {imgPath: "../assets/ts.png", title: "TypeScript"},
               // {imgPath: "../assets/ts.png", title: "TypeScript"},
@@ -145,6 +151,8 @@ function App() {
           imgWidth='90%'
           >
           </ProjectContainer>
+          <CvContainer></CvContainer>
+
         </div>
           <Navbar></Navbar>
       </DarkModeProvider>

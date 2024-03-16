@@ -33,6 +33,7 @@ body { /* lightmode */
   color: black;
   /* card var ska vara samma namn på dark och light  */
   --card: var(--card-light);
+  --opposite: var(--background-dark);
 
 
 }
@@ -41,7 +42,7 @@ body.dark { /*darkmode*/
   background-color: var(--background-dark);
   color: #ffffff;
   --card: var(--card-dark);
-
+  --opposite: var(--background);
 }
 
 .container{

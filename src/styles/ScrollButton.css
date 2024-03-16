@@ -9,7 +9,7 @@
   z-index: 1000; /* Make sure this is above all other elements */
   width: 5rem; /* Set a fixed width */
   height: 5rem; /* Set a fixed height */
-  background-color: #ffffffb4; /* Or any color you want */
+  background-color: #e9e8e8b4; 
   border-radius: 50%; /* Make it circular */
   border: none; 
   outline: none !important;

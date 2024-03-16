@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ProjectContainerProps } from '../types';
-import '../styles/DetailedProjectView.css'; 
+import '../styles/CvContainer.css'; 
 import WebsiteContainer from './WebsiteContainer';
 import Technologies from './Technologies';
 
@@ -27,9 +27,9 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
   return (
     <div className="dialog-overlay" onClick={props.close}>
       <div className="dialog-card" onClick={stopPropagation}>
-        <button className="close-button" onClick={props.close}>
-          <span className="material-icons">close</span> {/* Material icon for close */}
-        </button>
+        {/* <button className="close-button" onClick={props.close}>
+          <span className="material-icons">close</span>
+        </button> */}
         <div className='title'>{props.title}</div>
         <div className='center-row'>
           <div className='left-flex-col-container'>

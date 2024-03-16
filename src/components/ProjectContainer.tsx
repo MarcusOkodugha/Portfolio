@@ -18,7 +18,8 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
 
       return (
         <div onClick={handleClick}>
-          <Card>
+          <Card width='45rem' height='35rem' backgroundColor="var(--card)">
+            
             <div style={{fontSize: "", fontFamily: "arial", fontWeight: "", opacity: "0.5"}} >
               {props.title}
             </div>
