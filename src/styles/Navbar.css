@@ -1,4 +1,5 @@
 .navbar{
+/* background-color: green; */
     display: flex;
     width: 100%;
     justify-content:flex-end;

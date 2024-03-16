@@ -71,6 +71,7 @@
     cursor: pointer;
     border: none;
     background: none;
+    border: none;
   }
   .center-row{
     display: flex;

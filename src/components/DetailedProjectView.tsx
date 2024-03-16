@@ -27,9 +27,9 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
   return (
     <div className="dialog-overlay" onClick={props.close}>
       <div className="dialog-card" onClick={stopPropagation}>
-        {/* <button className="close-button" onClick={props.close}>
-          <span className="material-icons">close</span>
-        </button> */}
+        <button className="close-button icon-button" onClick={props.close}>
+          <span className="material-symbols-outlined">close</span>
+        </button>
         <div className='title'>{props.title}</div>
         <div className='center-row'>
           <div className='left-flex-col-container'>

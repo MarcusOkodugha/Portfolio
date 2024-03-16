@@ -3,6 +3,7 @@
   /* light */
   --background: #F5F5F7;
   --card-light: #FFFFFF;
+  
 
   /* dark */
   --background-dark: #171717; 
@@ -31,10 +32,10 @@ a:hover {
 body { /* lightmode */
   background-color: var(--background);
   color: black;
-  /* card var ska vara samma namn på dark och light  */
   --card: var(--card-light);
   --opposite: var(--background-dark);
-
+  --text:black;
+  --text-opposite: #ffffff;
 
 }
 
@@ -43,6 +44,8 @@ body.dark { /*darkmode*/
   color: #ffffff;
   --card: var(--card-dark);
   --opposite: var(--background);
+  --text: #ffffff;
+  --text-opposite: #000000;
 }
 
 .container{
@@ -77,6 +80,20 @@ button:focus-visible {
 
 .material-symbols-outlined {
   color: var(--color); /* Use the CSS variable for color */
+}
+.icon-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+
+}
+.icon-button:hover{
+  background-color: #e9e8e8b4;
 }
 
 

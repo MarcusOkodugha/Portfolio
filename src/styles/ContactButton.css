@@ -13,6 +13,7 @@
     transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 
@@ -23,6 +24,12 @@
   }
   
   .contact-button.hovering {
-    /* When the button is hovering, disable pointer events */
+    
     pointer-events: none;
+  }
+
+  .contact-button:hover {
+    transform: scale(1.05);
+    color: var(--text-opposite);
+    background-color:var(--text);
   }

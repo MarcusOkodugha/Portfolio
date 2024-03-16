@@ -7,11 +7,9 @@ function Navbar() {
 
     return(
         <>
-        <div className='navbar'>
-            <ToggleDarkmode></ToggleDarkmode>
-        </div>
-
-
+            <div className='navbar'>
+                <ToggleDarkmode></ToggleDarkmode>
+            </div>
         </>
     )
 }

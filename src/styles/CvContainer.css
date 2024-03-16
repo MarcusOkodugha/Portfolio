@@ -13,11 +13,12 @@
 }
 
 .dialog-card-cv {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
-    width: 40rem;
-    height: 50rem;
-    background-color: var(--card);
+    width: 42rem;
+    height: 56rem;
+    /* background-color: var(--card); */
+    background-color: white;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -25,3 +26,55 @@
     position: relative;
     
   }
+
+
+  .pdf-wrapper {
+    position: relative;
+    width: calc(100% - 40px); /* Adjust width to account for frame thickness */
+    height: calc(100% - 40px); /* Adjust height to account for frame thickness */
+    margin-top: 20px;
+    margin-left: 30px; 
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+.frame {
+    position: absolute;
+    background: white;
+    z-index: 10;
+}
+
+.top-frame, .bottom-frame {
+    height: 5px; /* Frame thickness */
+    left: 0;
+    right: 0;
+}
+
+.top-frame {
+    top: 0;
+}
+
+.bottom-frame {
+    bottom: 0;
+}
+
+.left-frame, .right-frame {
+    top: 0;
+    bottom: 0;
+}
+
+
+.left-frame {
+    width: 10px; 
+    
+    left: 0;
+}
+
+.right-frame {
+    width: 23px; 
+    right: 0;
+}
+
+object {
+    position: relative;
+    z-index: 5;
+}

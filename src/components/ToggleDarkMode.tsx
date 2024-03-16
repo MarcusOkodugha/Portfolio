@@ -6,7 +6,7 @@ const ToggleDarkMode: React.FC = () => {
 
   return (
     <button 
-      style={{ backgroundColor: 'transparent', outline: 'none', border: 'none' }} 
+      style={{ outline: 'none', border: 'none' }} className='icon-button' 
       onClick={toggleDarkMode}
     >
       <span 
