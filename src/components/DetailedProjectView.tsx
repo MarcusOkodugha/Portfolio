@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ProjectContainerProps } from '../types';
-import '../styles/CvContainer.css'; 
+import '../styles/DetailedProjectView.css'; 
 import WebsiteContainer from './WebsiteContainer';
 import Technologies from './Technologies';
 

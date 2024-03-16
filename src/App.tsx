@@ -27,6 +27,9 @@ function App() {
     }
   }
 
+
+  
+
   const openDialog = (projectDetails: ProjectContainerProps) => {
     setSelectedProject(projectDetails);
     setIsDialogOpen(true);
@@ -152,6 +155,8 @@ function App() {
           >
           </ProjectContainer>
           <CvContainer></CvContainer>
+          <div style={{ backgroundColor: "transparent" }}></div>
+
 
         </div>
           <Navbar></Navbar>

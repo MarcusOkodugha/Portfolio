@@ -1,8 +1,10 @@
 import Card from "./Card";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import '../styles/CvContainer.css'; 
 
 function CvContainer() {
     const [isOpen, setIsOpen] = useState(false);
+    const dialogRef = useRef(null);
 
     function downloadCv() {
         const link = document.createElement('a');
@@ -21,6 +23,19 @@ function CvContainer() {
         setIsOpen(false);
     }
 
+    function handleClickOutside(event: MouseEvent) {
+        if (dialogRef.current && !(dialogRef.current as HTMLElement).contains(event.target as Node)) {
+            closeDialog();
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
         <div onClick={openDialog}>
             <Card width='25rem' height='35rem' backgroundColor="#FFFFFF">
@@ -32,8 +47,8 @@ function CvContainer() {
                 </div>
             </Card>
             {isOpen && (
-                <div className="dialog-overlay" onClick={closeDialog}>
-                    <div className="dialog-card" onClick={(e) => e.stopPropagation()}>
+                <div className="dialog-overlay-cv" onClick={closeDialog}>
+                    <div className="dialog-card-cv" ref={dialogRef} onClick={(e) => e.stopPropagation()}>
                         <button className="close-button" onClick={closeDialog}>
                             <span className="material-symbols-outlined">close</span>
                         </button>
