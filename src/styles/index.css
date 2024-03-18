@@ -100,7 +100,6 @@ button:focus-visible {
   border-radius: 50%;
   border: none;
   color: var(--text);
-  /* background-color: red; */
 
 }
 .icon-button:hover{

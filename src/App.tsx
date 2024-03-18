@@ -87,7 +87,7 @@ function App() {
               "With CloudSaver, enterprises can look forward to not only substantial cost savings but also an enhanced understanding of their cloud operations, a critical factor as businesses increasingly prioritize cloud-native security and multi-cloud strategies.",
               technologies: [
                 {imgPath: "../assets/Vue.png", title: "Vue.js"},
-                {imgPath: "../assets/ts.png", title: "TypeScript"},
+                {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
                 {imgPath: "../assets/mongodb.jpg", title: "MongoDB"},
                 {imgPath: "../assets/nodejs.jpg", title: "Node.js"},
                 {imgPath: "../assets/tailwind.jpg", title: "Tailwind"},
@@ -120,7 +120,7 @@ function App() {
               "MySQL, Docker, Kubernetes, and GitHub Actions support its infrastructure and deployment.",
               technologies: [
                 {imgPath: "../assets/Vue.png", title: "Vue.js"},
-                {imgPath: "../assets/ts.png", title: "TypeScript"},
+                {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
                 {imgPath: "../assets/mongodb.jpg", title: "MongoDB"},
                 {imgPath: "../assets/nodejs.jpg", title: "Node.js"},
                 {imgPath: "../assets/tailwind.jpg", title: "Tailwind"},
