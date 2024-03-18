@@ -1,33 +1,22 @@
-/* 
-.websiteContainer {
-  position: relative;
-  width: 85%; 
-  margin: auto; 
-  padding-top: calc(85% / 1.645);
-  background: url('../assets/MacbookPro.png') no-repeat center center;
-  background-size: contain; 
-} */
+
 
 .websiteContainer {
   position: relative;
   width: 100%;
   margin: auto;
-  padding-top: 60.79%; /* Maintains the aspect ratio of 1:1.645 */
+  padding-top: 60.79%; 
   background: url('/assets/MacbookPro.png') no-repeat center center;
-  background-size: contain; /* Make sure the image is scaled properly */
+  background-size: contain;
 }
 
 .iframeContainer {
   position: absolute;
-  /* These values depend on the MacBook image's screen position */
-  top: 2.2%;
+  top: 2.0%;
   left: 10.3%;
   width: 79.5%;
   height: 87%;
-  /* background: white; */
 }
 
-/* The iframe CSS should be adjusted if necessary */
 iframe {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

@@ -6,15 +6,15 @@
   justify-content: center;
   position: fixed;
   top: 55%;
-  z-index: 1000; /* Make sure this is above all other elements */
-  width: 5rem; /* Set a fixed width */
-  height: 5rem; /* Set a fixed height */
+  z-index: 1000; 
+  width: 5rem; 
+  height: 5rem; 
   background-color: #e9e8e8b4; 
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%; 
   border: none; 
   outline: none !important;
   cursor: pointer;
-  transform: translateY(-50%); /* Center it vertically */
+  transform: translateY(-50%); 
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s ease-in-out;
@@ -44,4 +44,10 @@
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
+}
+@media (max-width: 799px) {
+  .scroll-button-left,
+  .scroll-button-right {
+    display: none;
+  }
 }

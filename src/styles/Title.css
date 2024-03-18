@@ -1,0 +1,12 @@
+@media (min-width: 800px) {
+    .title{
+        width: 30rem;
+        height: auto;
+    }
+}
+@media (min-width: 0px) {
+    .title{
+        width: 20rem;
+        height: auto;
+    }
+}

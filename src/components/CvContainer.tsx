@@ -50,7 +50,7 @@ function CvContainer() {
             {isOpen && (
                 <div className="dialog-overlay-cv" onClick={closeDialog}>
                     <div className="dialog-card-cv" ref={dialogRef} onClick={(e) => e.stopPropagation()}>
-                        <button style={{position:"absolute",top:"10px", right:"10px", zIndex:"1002"}} className="icon-button" onClick={closeDialog}>
+                        <button style={{position:"absolute",top:"10px", right:"10px", zIndex:"1002", color:"black"}} className="icon-button" onClick={closeDialog}>
                             <span className="material-symbols-outlined ">close</span>
                         </button>
                         {/* <object data="assets/CV.pdf#toolbar=0&view=FitH&zoom=page-width" type="application/pdf" width="100%" height="100%"></object> */}

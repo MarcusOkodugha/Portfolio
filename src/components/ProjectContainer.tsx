@@ -1,6 +1,5 @@
 import Card from './Card'
 import WebsiteContainer from './WebsiteContainer'
-import '../styles/ProjectContainer.css';
 import { ProjectContainerProps } from '../types';
 
 interface ProjectContainerExtendedProps extends ProjectContainerProps {
@@ -18,15 +17,15 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
 
       return (
         <div onClick={handleClick}>
-          <Card width='45rem' height='35rem' backgroundColor="var(--card)">
+          <Card backgroundColor="var(--card)">
             
-            <div style={{fontSize: "", fontFamily: "arial", fontWeight: "", opacity: "0.5"}} >
+            <div className='title-text'style={{ fontFamily: "arial", fontWeight: "", opacity: "0.5"}} >
               {props.title}
             </div>
-            <div style={{fontSize: "x-large", fontFamily: "arial", fontWeight: "", paddingBottom: "2rem"}}>
+            <div className="description-text"style={{fontFamily: "arial", fontWeight: "", paddingBottom: "2rem"}}>
               {props.description}
             </div>
-            {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
+            {props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
             {props.showImage && 
             <div style={{display:"flex", width:"100%",  justifyContent: "center" }}>
               <img src={props.imgPath} alt={props.title} style={{width: "60%", height: "auto"}}></img>

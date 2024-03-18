@@ -44,7 +44,7 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
             </div>
           </div>
           <div className='right-side-container'>
-
+  
           <div className='description'>
             {props.description && <p style={{fontWeight:"bold"}}>{props.description}</p>}
             {formattedLongDescription}

@@ -8,7 +8,6 @@ function WebsiteContainer(props: WebsiteContainerProps){
     return (
 
         <div className='websiteContainer'>
-            {/* put the mac img hear  */}
             <div className='iframeContainer' >
                 <iframe src={props.link} title="description" className='iframe'></iframe>
             </div>

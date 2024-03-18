@@ -1,8 +1,7 @@
 .card{
     padding: 2rem;
     border-radius: 20px;
-    width: 45rem;
-    height: 35rem;
+
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     will-change: transform, box-shadow;
@@ -16,3 +15,31 @@
   }
 
   
+@media (min-width: 2000px) {
+    .card{
+        width: 85rem;
+        height: 45rem;
+    }
+}
+@media (min-width: 1500px) {
+    .card{
+        width: 41rem;
+        height: 31rem;
+    }
+}
+@media (min-width: 800px) {
+    .card{
+        width: 39rem;
+        height: 29rem;
+    }
+}
+@media (max-width: 799px) {
+    .card{
+        box-sizing: border-box; 
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2rem;
+    }
+}
+
