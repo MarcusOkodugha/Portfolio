@@ -163,7 +163,7 @@
       font-size: 0.75rem;
       margin-top: -0.5rem;
       overflow-y: auto;
-      overflow-x: wrap;
+      max-height: 65vh;
     }
     .close-button {
       position: absolute;

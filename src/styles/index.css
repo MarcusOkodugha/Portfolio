@@ -152,6 +152,12 @@ button:focus-visible {
   }
 }
 
+@media (min-width: 2000px){
+  .projectsRow{
+    margin-top: 9%;
+  }
+}
+
 .projectsRow::-webkit-scrollbar {
   display: none; 
 }

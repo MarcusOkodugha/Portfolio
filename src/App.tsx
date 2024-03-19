@@ -184,7 +184,7 @@ function App() {
             <CvContainer></CvContainer>
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>
-          <div className='container' style={{position:"absolute",bottom:"1rem", right:"0rem"}}>
+          <div className='container' style={{position:"fixed",bottom:"1rem", right:"0rem"}}>
             <Navbar></Navbar>
           </div>
       </DarkModeProvider>
