@@ -28,7 +28,6 @@
 }
 @media (min-width:1500px){
     .cv-card{
-        border: purple 2px solid;
         height: 35rem !important;
     }
 }

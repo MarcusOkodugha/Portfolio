@@ -178,3 +178,21 @@ button:focus-visible {
     font-size: medium;
   }
 }
+
+.mobile-version {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  .mobile-version {
+    display: block;
+    border: 2px solid green;
+  }
+}
+
+@media (max-width: 799px) {
+  .desktop-version {
+    border: 2px solid red;
+    display: none;
+  }
+}
