@@ -56,7 +56,7 @@ body.dark { /*darkmode*/
   margin-right: 1rem;
   /* border: red 1px solid; */
 }
-@media (min-width: 0px){
+@media (max-width: 800px){
   .container{
     margin-left: 0rem;
     width: 100%;

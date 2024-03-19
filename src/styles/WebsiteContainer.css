@@ -1,28 +1,58 @@
 
-
-.websiteContainer {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  padding-top: 60.79%; 
-  background: url('/assets/MacbookPro.png') no-repeat center center;
-  background-size: contain;
+@media (max-width:800px){
+  .websiteContainer {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 60.79%; 
+    background: url('/assets/MacbookPro.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .iframeContainer {
+    position: absolute;
+    top: 2.0%;
+    left: 10.3%;
+    width: 79.5%;
+    height: 87%;
+  }
+  
+  iframe {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 665.9%;
+    height: 668.7%;
+    transform: scale(0.15);
+    transform-origin: 0 0;
+    border: none;
+  }
 }
 
-.iframeContainer {
-  position: absolute;
-  top: 2.0%;
-  left: 10.3%;
-  width: 79.5%;
-  height: 87%;
-}
-
-iframe {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 285.7%;
-  height: 285.7%;
-  transform: scale(0.35);
-  transform-origin: 0 0;
-  border: none;
+@media (min-width:801px){
+  .websiteContainer {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 60.79%; 
+    background: url('/assets/MacbookPro.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .iframeContainer {
+    position: absolute;
+    top: 2.0%;
+    left: 10.3%;
+    width: 79.5%;
+    height: 87%;
+  }
+  
+  iframe {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 285.7%;
+    height: 285.7%;
+    transform: scale(0.35);
+    transform-origin: 0 0;
+    border: none;
+  }
 }

@@ -18,7 +18,6 @@
     .cv-card{
         
         width: 100%;
-        aspect-ratio:  1/1.414 ;
     }
 }
 @media (min-width:800px){
@@ -31,7 +30,7 @@
         height: 35rem !important;
     }
 }
-@media (min-width:1500px){
+@media (min-width:2000px){
     .cv-card{
         height: 42rem !important;
     }
@@ -48,29 +47,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 .dialog-card-cv {
+    aspect-ratio:  1/1.414 ;
     padding: 1rem;
     border-radius: 20px;
-    width: 42rem;
-    height: 56rem;
-    /* background-color: var(--card); */
+   
     background-color: white;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 1001; /* Above the overlay */
+    z-index: 1001;
     position: relative;
     
   }
   .pdf-wrapper {
     position: relative;
-    width: calc(100% - 40px); /* Adjust width to account for frame thickness */
-    height: calc(100% - 40px); /* Adjust height to account for frame thickness */
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     margin-top: 20px;
     margin-left: 30px; 
-    overflow: hidden; /* Hide the scrollbar */
+    overflow: hidden;
 }
 .frame {
     position: absolute;
@@ -78,7 +76,7 @@
     z-index: 10;
 }
 .top-frame, .bottom-frame {
-    height: 5px; /* Frame thickness */
+    height: 5px;
     left: 0;
     right: 0;
 }
@@ -105,4 +103,17 @@
 object {
     position: relative;
     z-index: 5;
+}
+@media (max-width: 800px) {
+    .dialog-card-cv{
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (min-width: 801px) {
+    .dialog-card-cv{
+        height: 48rem;
+        width: 36rem;
+    }
 }

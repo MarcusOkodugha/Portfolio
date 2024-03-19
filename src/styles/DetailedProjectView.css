@@ -15,9 +15,9 @@
   }
   
   .dialog-card {
-    margin-top: 4rem;
+    margin-top: 2rem;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
     width: 90%;
     height: auto;
@@ -26,6 +26,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1001;
+    max-height: 90vh;
+    overflow-y: auto;
    
     }
   
@@ -84,8 +86,8 @@
     }
   
     .tech-stack-row {
-      border: red 1px solid ;
-      margin-top: 2rem;
+      width: 100%;
+      border: green 1px solid ;
     }
   
     .bottom-row{
@@ -94,9 +96,7 @@
       justify-content: flex-end;
     }
     .links{
-      position: absolute;
-      bottom: 2rem;
-      right: 2rem;
+
       display: flex;
       justify-content: end;
      
@@ -115,6 +115,8 @@
       height: 100%;
     }
   }
+
+
   @media (min-width:801px){
     .dialog-overlay {
       position: fixed;
@@ -133,8 +135,8 @@
   .dialog-card {
     padding: 2rem;
     border-radius: 20px;
-    width: 80rem;
-    height: 50rem;
+    width: 75rem;
+    height: 42rem;
     background-color: var(--card);
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -156,20 +158,18 @@
     margin-left: 2rem;
   }
     .computer {
-      width: 45rem;
+      width: 40rem;
       height: fit-content;
     }
     .center-img {
-      display: flex;
-      justify-content: start;
-      width: 45rem;
-      height: fit-content;
+      display: block;
+      max-width: 38rem;
      
     }
     .description{
   
       width: 100%;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       margin-top: -0.5rem;
       overflow-y: auto;
       overflow-x: wrap;

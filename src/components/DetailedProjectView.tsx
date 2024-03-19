@@ -101,9 +101,9 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
               {props.description && <p style={{fontWeight:"bold"}}>{props.description}</p>}
               {formattedLongDescription}
             </div>
-              <div className='tech-stack-row'>
-                  {props.technologies&& <Technologies technologies={props.technologies}></Technologies>}
-              </div>
+            <div className='tech-stack-row'>
+                {props.technologies&& <Technologies technologies={props.technologies}></Technologies>}
+            </div>
             
 
             <div className='links'>
