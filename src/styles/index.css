@@ -34,7 +34,6 @@ html{
 }
 
 body { /* lightmode */
-
   background-color: var(--background);
   color: black;
   --card: var(--card-light);
@@ -57,9 +56,11 @@ body.dark { /*darkmode*/
   margin-right: 1rem;
   /* border: red 1px solid; */
 }
-@media (max-width: 800px){
+@media (min-width: 0px){
   .container{
-    margin: 1rem;
+    margin-left: 0rem;
+    width: 100%;
+
   }
 }
 
@@ -106,19 +107,18 @@ button:focus-visible {
   background-color: #e9e8e8b4;
 }
 .top-bar{
-  margin-bottom:1rem;
-  padding-top:1rem;
+  /* margin-bottom:1rem; */
+  /* padding-top:1rem; */
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  
 }
-.center-section{
-  /* height: 100vh;
-  display: flex;
-  flex-direction: column;
-  border: purple 1px solid; */
-}
+
 .projectsRow {
+  box-sizing: border-box;
   display: flex;
   overflow-x: auto; 
   overflow-y: hidden;
@@ -127,9 +127,11 @@ button:focus-visible {
   scrollbar-width: none; 
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-  padding: 2rem 0;
-  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   width: 100%;
+
+  
   /* border: red 1px solid; */
 
 }
@@ -143,13 +145,12 @@ button:focus-visible {
     -ms-overflow-style: none;
     scroll-behavior: smooth;
     /* padding: 2rem 0; */
-    height: 100%;
+
     width: 100%;
     /* border: red 1px solid; */
   
   }
 }
-
 
 .projectsRow::-webkit-scrollbar {
   display: none; 
@@ -163,7 +164,6 @@ button:focus-visible {
     padding: 0rem;
   }
 }
-
 .title-text{
   font-style: normal;
 }

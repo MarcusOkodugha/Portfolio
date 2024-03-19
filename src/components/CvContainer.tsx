@@ -1,4 +1,3 @@
-import Card from "./Card";
 import { useState, useRef, useEffect } from "react";
 import '../styles/CvContainer.css'; 
 import "../styles/index.css";
@@ -39,14 +38,14 @@ function CvContainer() {
 
     return (
         <div onClick={openDialog}>
-            <Card width='25rem' height='35rem' backgroundColor="#FFFFFF">
-                <img src="./assets/CV.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }}></img>
+            <div className="cv-card">
+                <img src="./assets/CV.jpg" style={{ objectFit: 'contain', width: 'auto', height: '100%' }}></img>
                 <div style={{ display: "flex", width: "100%", justifyContent: "end", zIndex: "2", backgroundColor: "red" }}>
-                    <button onClick={downloadCv} className="icon-button" style={{position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
+                    <button onClick={downloadCv} className="icon-button" style={{color:"black", position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
                         <span className="material-symbols-outlined" style={{ color: 'inherit', transition: 'color 0.3s' }}>download</span>
                     </button>
                 </div>
-            </Card>
+            </div>
             {isOpen && (
                 <div className="dialog-overlay-cv" onClick={closeDialog}>
                     <div className="dialog-card-cv" ref={dialogRef} onClick={(e) => e.stopPropagation()}>
@@ -61,7 +60,7 @@ function CvContainer() {
                         <div className="frame left-frame"></div>
                         <div className="frame right-frame"></div>
                     </div>
-                    <button onClick={downloadCv} className="icon-button" style={{ zIndex:"1003",position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
+                    <button onClick={downloadCv} className="icon-button" style={{  color:"black", zIndex:"1003",position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
                         <span className="material-symbols-outlined" style={{ color: 'inherit', transition: 'color 0.3s' }}>download</span>
                     </button>
                     </div>

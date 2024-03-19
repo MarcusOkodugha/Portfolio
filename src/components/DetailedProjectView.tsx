@@ -30,7 +30,7 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
         <button className="close-button icon-button" onClick={props.close}>
           <span className="material-symbols-outlined">close</span>
         </button>
-        <div className='title'>{props.title}</div>
+        <div className='detail-title'>{props.title}</div>
         <div className='center-row'>
           <div className='left-flex-col-container'>
             <div className='computer'>

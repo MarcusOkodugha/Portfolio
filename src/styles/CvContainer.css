@@ -1,3 +1,43 @@
+.cv-card{
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    will-change: transform, box-shadow;
+    cursor: pointer;
+    aspect-ratio:  1/1.414 ;
+
+}
+.cv-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); 
+}
+@media (min-width:0px){
+    .cv-card{
+        
+        width: 100%;
+        aspect-ratio:  1/1.414 ;
+    }
+}
+@media (min-width:800px){
+    .cv-card{
+        height: 31rem !important;
+    }
+}
+@media (min-width:1500px){
+    .cv-card{
+        border: purple 2px solid;
+        height: 35rem !important;
+    }
+}
+@media (min-width:1500px){
+    .cv-card{
+        height: 42rem !important;
+    }
+}
+
 .dialog-overlay-cv {
     position: fixed;
     top: 0;
@@ -11,7 +51,6 @@
     justify-content: center;
     z-index: 1000; /* Ensure it's above other content */
 }
-
 .dialog-card-cv {
     padding: 1rem;
     border-radius: 20px;
@@ -26,8 +65,6 @@
     position: relative;
     
   }
-
-
   .pdf-wrapper {
     position: relative;
     width: calc(100% - 40px); /* Adjust width to account for frame thickness */
@@ -36,33 +73,26 @@
     margin-left: 30px; 
     overflow: hidden; /* Hide the scrollbar */
 }
-
 .frame {
     position: absolute;
     background: white;
     z-index: 10;
 }
-
 .top-frame, .bottom-frame {
     height: 5px; /* Frame thickness */
     left: 0;
     right: 0;
 }
-
 .top-frame {
     top: 0;
 }
-
 .bottom-frame {
     bottom: 0;
 }
-
 .left-frame, .right-frame {
     top: 0;
     bottom: 0;
 }
-
-
 .left-frame {
     width: 10px; 
     
@@ -73,7 +103,6 @@
     width: 23px; 
     right: 0;
 }
-
 object {
     position: relative;
     z-index: 5;

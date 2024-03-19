@@ -1,26 +1,49 @@
 .contact-button{
     background-color: red;
-    font-size: large;
     border-radius: 10px;
-    /* border: 2px solid black;  */
-    height: 5rem;
-    margin-top: 1.5rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+
+
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     color: white;
     transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
-    position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border: none;
 }
-@media (max-width: 800px){
+@media (min-width: 0px){
+  .contact-button{
+    font-size: xx-small;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* padding-bottom: 1rem;
+    padding-bottom: 1rem; */
+    height: 3.5rem;
+  }
+}
+@media (min-width: 350px){
+  .contact-button{
+    font-size: x-small;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* padding-bottom: 1rem;
+    padding-bottom: 1rem; */
+    height: 3.5rem;
+  }
+}
+@media (min-width: 440px){
   .contact-button{
     font-size: small;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     height: 4rem;
+  }
+}
+@media (min-width: 800px){
+  .contact-button{
+    font-size: large;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    height: 5rem;
   }
 }
 
