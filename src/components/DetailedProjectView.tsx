@@ -94,7 +94,7 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
                 {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
               </div>
               <div className='center-img'>
-                  {props.showImage &&<img src={props.imgPath} alt={props.title} style={{width: props.imgWidth, height: "auto"}}></img>}
+                  {props.showImage &&<img src={props.imgPath} alt={props.title} className="p-img" ></img>}
               </div>
 
             <div className='description'>
@@ -102,7 +102,7 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
               {formattedLongDescription}
             </div>
             <div className='tech-stack-row'>
-                {props.technologies&& <Technologies technologies={props.technologies}></Technologies>}
+                  {props.technologies&& <Technologies technologies={props.technologies}></Technologies>}
             </div>
             
 
