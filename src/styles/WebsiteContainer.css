@@ -49,9 +49,9 @@
   iframe {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    width: 285.7%;
-    height: 285.7%;
-    transform: scale(0.35);
+    width: 357%;
+    height: 358%;
+    transform: scale(0.28);
     transform-origin: 0 0;
     border: none;
   }
