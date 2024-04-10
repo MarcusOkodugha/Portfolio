@@ -178,7 +178,36 @@ function App() {
             useWebsiteContainer={false}
             showImage={true}
             imgPath='../assets/Campus.png'
-            imgWidth='85%'
+            imgWidth='60%'
+            >
+            </ProjectContainer>
+            <ProjectContainer
+            title="Chess"
+            link=""
+            gitLink='https://github.com/MarcusOkodugha/Chess'
+            downloadLink=''
+            description="Play Against Infinity"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Chess',
+              link: '',
+              gitLink: 'https://github.com/MarcusOkodugha/Chess',
+              downloadLink: '',
+              description: "Play Against Infinity",
+              longDescription:"Dive into the captivating world of Chess with Infinity a digital chess platform meticulously crafted in the fall of 2022, as I explored the depths of object-oriented programming and applied its principles through the Java Swing framework. This project encapsulates the fusion of a beloved traditional game with the innovative twists of modern technology, offering a unique chess experience for players of all skill levels. At the heart of this platform is Infinity, a chess bot designed to provide a challenging yet enjoyable game to those daring to test their skills. Infinity is not just any opponent; it embodies the strategic depth and complexity of chess, making each game a new opportunity to learn and improve. Players have the flexibility to choose their experience: engage in a thoughtful match against Infinity, enjoy the camaraderie of playing against friends, or sit back and observe as Infinity takes on itself in an intriguing display of automated strategy."+"\n"+"Chess with Infinity is more than a game; it's a reflection of my journey through the art of programming and my passion for chess. The user interface, carefully designed with Java Swing, offers intuitive navigation and clear visual cues, ensuring a seamless interaction with the game. Whether you're a seasoned chess enthusiast or new to the game, the platform invites you into an engaging world where each move tells a story of strategic thought and the endless possibilities that programming can unlock."+"\n"+"This project highlights my dedication to crafting an interactive experience that bridges the gap between classic strategy and modern innovation. By stepping into the world of Chess with Infinity players embark on a journey that challenges their skills, stimulates their minds, and offers a fresh take on the timeless game of chess",
+              technologies: [
+                {imgPath: "../assets/java.jpg", title: "Java"},
+                {imgPath: "../assets/JavaSwing.jpg", title: "Java Swing"},
+              ],
+              useWebsiteContainer: false,
+              showImage:true,
+              imgPath: '../assets/Chess.png',
+              imgWidth: "77%",
+            })}
+            useWebsiteContainer={false}
+            showImage={true}
+            imgPath='../assets/Chess.png'
+            imgWidth='55%'
             >
             </ProjectContainer>
             <CvContainer></CvContainer>

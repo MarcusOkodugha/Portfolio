@@ -27,8 +27,8 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
             </div>
             {props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
             {props.showImage && 
-            <div style={{display:"flex", width:"100%",  justifyContent: "center" }}>
-              <img src={props.imgPath} alt={props.title} style={{width: "60%", height: "auto"}}></img>
+            <div style={{display:"flex", width:"100%",  justifyContent: "center"}}>
+              <img src={props.imgPath} alt={props.title} style={{width: props.imgWidth, height: "auto"}}></img>
             </div>
             }
           </Card>
