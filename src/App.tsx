@@ -106,12 +106,12 @@ function App() {
             </ProjectContainer>
             <ProjectContainer
             title="Health Tracker"
-            link=""
+            link="https://user-interface.app.cloud.cbh.kth.se/"
             description="Streamlining Health Management"
             longDescription= {""}
             onClick={() => openDialog({
               title: 'Health Tracker',
-              link: '',
+              link: 'https://user-interface.app.cloud.cbh.kth.se/',
               gitLink: 'https://github.com/KTH-awaken/mvk-cloudsaver-frontend',
               description: "Health Tracker Streamlining Health Management",
               longDescription: "HealthHive is a health journaling platform using React.js for its interface and Node.js for backend operations, including image uploads.\n\n"+
