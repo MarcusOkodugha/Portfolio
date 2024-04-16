@@ -104,7 +104,7 @@ function App() {
             showImage={false}
             >
             </ProjectContainer>
-            <ProjectContainer
+            {/* <ProjectContainer
             title="Health Tracker"
             link="https://user-interface.app.cloud.cbh.kth.se/"
             description="Streamlining Health Management"
@@ -136,7 +136,7 @@ function App() {
             useWebsiteContainer={true}
             showImage={false}
             >
-            </ProjectContainer>
+            </ProjectContainer> */}
             <ProjectContainer
             title="Campus"
             link=""
@@ -181,6 +181,46 @@ function App() {
             imgWidth='60%'
             >
             </ProjectContainer>
+
+            <ProjectContainer
+            title="Book And Claim"
+            link=""
+            gitLink=''
+            downloadLink=''
+            description="Making Future"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Book And Claim',
+              link: '',
+              gitLink: '',
+              downloadLink: '',
+              description: "Book And Claim by Dream Team",
+              longDescription:"In the spring of 2023, I assumed the role of product owner for a pioneering sustainability and enterprise system developed for Afry, a consulting leader in sustainability. This system, built under a strict non-disclosure agreement (NDA), integrates advanced technology to enhance sustainable practices across industries. Due to confidentiality constraints, the specifics of the system's functionalities remain undisclosed. However, I can highlight the sophisticated technology stack utilized in its creation.\n\n" +
+              "The development employed Angular for crafting a dynamic user interface, complemented by NgRx for state management, ensuring a reactive and consistent experience. Angular Material provided a suite of design components for a sleek, modern look and feel. The server-side logic was powered by .NET Core, with C Sharp as the primary programming language, offering robust performance and scalability. Azure cloud services were crucial for hosting and data management, providing a secure and scalable infrastructure. TypeScript brought strong typing to JavaScript, enhancing the maintainability and reliability of the codebase. GitHub Actions automated the continuous integration and deployment processes, streamlining development and ensuring high-quality outputs.\n\n"+
+              "As product owner, my responsibility was to orchestrate these technologies into a seamless and effective system that supports Afry's strategic goals in sustainability and EUs 2050 Taxonomy goal. This project not only highlights my expertise in managing complex technological solutions but also reflects my commitment to leveraging technology for environmental stewardship.",
+              technologies: [
+                {imgPath: "../assets/angular.jpg", title: "Angular"},
+                {imgPath: "../assets/ngRx.jpg", title: "NgRx"},
+                {imgPath: "../assets/angularMaterial.jpg", title: "Angular Material"},
+                {imgPath: "../assets/dotNet.jpg", title: ".NET Core"},
+                {imgPath: "../assets/cSharp.jpg", title: "C Sharp"},
+                {imgPath: "../assets/azure.jpg", title: "Azure"},
+                {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
+                {imgPath: "../assets/github-actions.jpg", title: "Actions"},
+
+              ],
+              useWebsiteContainer: true,
+              showImage:false,
+              imgPath: '../assets/bookAndClaim.png',
+              imgWidth: "77%",
+            })}
+            useWebsiteContainer={true}
+            showImage={false}
+            imgPath='../assets/bookAndClaim.png'
+            imgWidth='100%'
+            >
+            </ProjectContainer>
+
             <ProjectContainer
             title="Chess"
             link=""
@@ -210,6 +250,35 @@ function App() {
             imgWidth='55%'
             >
             </ProjectContainer>
+
+            {/* <ProjectContainer
+            title="Terraformer"
+            link=""
+            gitLink='https://github.com/KTH-dream-team/KTH-dream-project'
+            downloadLink=''
+            description="Play Online Against Friends"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Terraformer',
+              link: '',
+              gitLink: 'https://github.com/KTH-dream-team/KTH-dream-project',
+              downloadLink: '',
+              description: "Play Online Against Friends",
+              longDescription:"",
+              technologies: [
+                {imgPath: "../assets/java.jpg", title: "Java"},
+              ],
+              useWebsiteContainer: false,
+              showImage:true,
+              imgPath: '../assets/Chess.png',
+              imgWidth: "77%",
+            })}
+            useWebsiteContainer={false}
+            showImage={true}
+            imgPath='../assets/Chess.png'
+            imgWidth='55%'
+            >
+            </ProjectContainer> */}
             <CvContainer></CvContainer>
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>

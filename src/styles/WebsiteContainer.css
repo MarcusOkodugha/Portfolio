@@ -1,4 +1,4 @@
-
+/* Mobile */
 @media (max-width:800px){
   .websiteContainer {
     position: relative;
@@ -27,7 +27,7 @@
     border: none;
   }
 }
-
+/* Desktop */
 @media (min-width:801px){
   .websiteContainer {
     position: relative;
@@ -46,7 +46,7 @@
     height: 87%;
   }
   
-  iframe {
+  .iframe {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 357%;

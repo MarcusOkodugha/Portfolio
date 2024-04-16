@@ -25,7 +25,7 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
             <div className="description-text"style={{fontFamily: "arial", fontWeight: "", paddingBottom: "2rem"}}>
               {props.description}
             </div>
-            {props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
+            {props.useWebsiteContainer && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
             {props.showImage && 
             <div style={{display:"flex", width:"100%",  justifyContent: "center"}}>
               <img src={props.imgPath} alt={props.title} style={{width: props.imgWidth, height: "auto"}}></img>

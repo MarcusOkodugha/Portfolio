@@ -2,6 +2,7 @@ import '../styles/WebsiteContainer.css';
 
 type WebsiteContainerProps = {
     link?: string;
+    imgPath?: string;
 }
 
 function WebsiteContainer(props: WebsiteContainerProps){
@@ -9,7 +10,8 @@ function WebsiteContainer(props: WebsiteContainerProps){
 
         <div className='websiteContainer'>
             <div className='iframeContainer' >
-                <iframe src={props.link} title="description" className='iframe'></iframe>
+                {props.imgPath && <img src={props.imgPath} className='iframe'></img>}
+                {props.link&& <iframe src={props.link} title="description" className='iframe'></iframe>}
             </div>
         </div>
     )
