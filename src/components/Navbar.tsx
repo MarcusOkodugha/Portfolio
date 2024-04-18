@@ -1,17 +1,21 @@
-import '../styles/Navbar.css'
-import ToggleDarkmode from './ToggleDarkMode'
+import "../styles/Navbar.css";
+import ToggleDarkmode from "./ToggleDarkMode";
+import LinkedinButton from "./LinkedinButton";
+import CvButton from "./CvButton";
+
 
 function Navbar() {
 
+return (
+    <>
+        <div className="navbar">
 
-
-    return(
-        <>
-            <div className='navbar'>
-                <ToggleDarkmode></ToggleDarkmode>
-            </div>
-        </>
-    )
+            <CvButton></CvButton>
+            <LinkedinButton></LinkedinButton>
+            <ToggleDarkmode></ToggleDarkmode>
+        </div>
+    </>
+);
 }
 
-export default Navbar
+export default Navbar;

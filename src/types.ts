@@ -10,6 +10,8 @@ export type ProjectContainerProps = {
     imgWidth?: string;
     gitLink?: string;
     downloadLink?: string;
+    genericLink?: string;
+    genericLinkText?: string;
 };  
 
 export type TechnologyProps = {

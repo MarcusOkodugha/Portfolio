@@ -54,5 +54,6 @@
     transform: scale(0.28);
     transform-origin: 0 0;
     border: none;
+    /* border: solid 4px red; */
   }
 }

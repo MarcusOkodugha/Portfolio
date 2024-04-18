@@ -187,6 +187,8 @@ function App() {
             link=""
             gitLink=''
             downloadLink=''
+            genericLink='https://afry.com/en'
+            genericLinkText='AFRY'
             description="Making Future"
             longDescription= {""}
             onClick={() => openDialog({
@@ -194,6 +196,8 @@ function App() {
               link: '',
               gitLink: '',
               downloadLink: '',
+              genericLink:'https://afry.com/en',
+              genericLinkText:'AFRY',
               description: "Book And Claim by Dream Team",
               longDescription:"In the spring of 2023, I assumed the role of product owner for a pioneering sustainability and enterprise system developed for Afry, a consulting leader in sustainability. This system, built under a strict non-disclosure agreement (NDA), integrates advanced technology to enhance sustainable practices across industries. Due to confidentiality constraints, the specifics of the system's functionalities remain undisclosed. However, I can highlight the sophisticated technology stack utilized in its creation.\n\n" +
               "The development employed Angular for crafting a dynamic user interface, complemented by NgRx for state management, ensuring a reactive and consistent experience. Angular Material provided a suite of design components for a sleek, modern look and feel. The server-side logic was powered by .NET Core, with C Sharp as the primary programming language, offering robust performance and scalability. Azure cloud services were crucial for hosting and data management, providing a secure and scalable infrastructure. TypeScript brought strong typing to JavaScript, enhancing the maintainability and reliability of the codebase. GitHub Actions automated the continuous integration and deployment processes, streamlining development and ensuring high-quality outputs.\n\n"+
@@ -207,7 +211,6 @@ function App() {
                 {imgPath: "../assets/azure.jpg", title: "Azure"},
                 {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
                 {imgPath: "../assets/github-actions.jpg", title: "Actions"},
-
               ],
               useWebsiteContainer: true,
               showImage:false,
@@ -234,7 +237,7 @@ function App() {
               gitLink: 'https://github.com/MarcusOkodugha/Chess',
               downloadLink: '',
               description: "Play Against Infinity",
-              longDescription:"Dive into the captivating world of Chess with Infinity a digital chess platform meticulously crafted in the fall of 2022, as I explored the depths of object-oriented programming and applied its principles through the Java Swing framework. This project encapsulates the fusion of a beloved traditional game with the innovative twists of modern technology, offering a unique chess experience for players of all skill levels. At the heart of this platform is Infinity, a chess bot designed to provide a challenging yet enjoyable game to those daring to test their skills. Infinity is not just any opponent; it embodies the strategic depth and complexity of chess, making each game a new opportunity to learn and improve. Players have the flexibility to choose their experience: engage in a thoughtful match against Infinity, enjoy the camaraderie of playing against friends, or sit back and observe as Infinity takes on itself in an intriguing display of automated strategy."+"\n"+"Chess with Infinity is more than a game; it's a reflection of my journey through the art of programming and my passion for chess. The user interface, carefully designed with Java Swing, offers intuitive navigation and clear visual cues, ensuring a seamless interaction with the game. Whether you're a seasoned chess enthusiast or new to the game, the platform invites you into an engaging world where each move tells a story of strategic thought and the endless possibilities that programming can unlock."+"\n"+"This project highlights my dedication to crafting an interactive experience that bridges the gap between classic strategy and modern innovation. By stepping into the world of Chess with Infinity players embark on a journey that challenges their skills, stimulates their minds, and offers a fresh take on the timeless game of chess",
+              longDescription:"Dive into the captivating world of Chess with Infinity a digital chess platform meticulously crafted in the fall of 2022, as I explored the depths of object-oriented programming and applied its principles through the Java Swing framework. This project encapsulates the fusion of a beloved traditional game with the innovative twists of modern technology, offering a unique chess experience for players of all skill levels. At the heart of this platform is Infinity, a chess bot designed to provide a challenging yet enjoyable game to those daring to test their skills. Infinity is not just any opponent; it embodies the strategic depth and complexity of chess, making each game a new opportunity to learn and improve. Players have the flexibility to choose their experience: engage in a thoughtful match against Infinity, enjoy the camaraderie of playing against friends, or sit back and observe as Infinity takes on itself in an intriguing display of automated strategy."+"\n\n"+"Chess with Infinity is more than a game; it's a reflection of my journey through the art of programming and my passion for chess. The user interface, carefully designed with Java Swing, offers intuitive navigation and clear visual cues, ensuring a seamless interaction with the game. Whether you're a seasoned chess enthusiast or new to the game, the platform invites you into an engaging world where each move tells a story of strategic thought and the endless possibilities that programming can unlock."+"\n"+"This project highlights my dedication to crafting an interactive experience that bridges the gap between classic strategy and modern innovation. By stepping into the world of Chess with Infinity players embark on a journey that challenges their skills, stimulates their minds, and offers a fresh take on the timeless game of chess",
               technologies: [
                 {imgPath: "../assets/java.jpg", title: "Java"},
                 {imgPath: "../assets/JavaSwing.jpg", title: "Java Swing"},
