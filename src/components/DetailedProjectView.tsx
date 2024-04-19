@@ -92,7 +92,9 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
           <div className='detail-title'>{props.title}</div>
           <div className='center-row'>
               <div className='computer'>
-                {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>}
+                {/* {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>} */}
+                {props.useWebsiteContainer && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
+
               </div>
               <div className='center-img'>
                   {props.showImage &&<img src={props.imgPath} alt={props.title} className="p-img" ></img>}

@@ -155,7 +155,6 @@
     .center-img {
       display: block;
       max-width: 38rem;
-     
     }
     .description{
       width: 100%;
@@ -194,8 +193,6 @@
       right: 2rem;
       display: flex;
       justify-content: end;
-     
-     
       gap: 2rem;
     }
     .description p {
