@@ -2,16 +2,25 @@ import { useState, useRef, useEffect } from "react";
 import '../styles/CvContainer.css'; 
 import "../styles/index.css";
 import { downloadCv } from "../Util";
+import CvSkeleton from "./CvSkeleton";
 
 
 
 function CvContainer() {
     const [isOpen, setIsOpen] = useState(false);
     const dialogRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const handlePdfLoaded = () => {
+        setTimeout(() => {
+            setIsLoading(false); 
+        }, 1000);
+    };
 
 
     function openDialog() {
         setIsOpen(true);
+        setIsLoading(true);
     }
 
     function closeDialog() {
@@ -49,12 +58,19 @@ function CvContainer() {
                         </button>
                         {/* <object data="assets/CV.pdf#toolbar=0&view=FitH&zoom=page-width" type="application/pdf" width="100%" height="100%"></object> */}
                         <div className="pdf-wrapper">
-                        <object data="assets/CV.pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%"></object>
-                        <div className="frame top-frame"></div>
-                        <div className="frame bottom-frame"></div>
-                        <div className="frame left-frame"></div>
-                        <div className="frame right-frame"></div>
-                    </div>
+                            {isLoading && (
+                                <CvSkeleton/>
+                          )}
+                            <object data="assets/CV.pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" onLoad={handlePdfLoaded}></object>
+                           {!isLoading&&(
+                                <>
+                                    <div className="frame top-frame"></div>
+                                    <div className="frame bottom-frame"></div>
+                                    <div className="frame left-frame"></div>
+                                    <div className="frame right-frame"></div>
+                                </>
+                           )}
+                        </div>
                     <button onClick={downloadCv} className="icon-button" style={{  color:"black", zIndex:"1003",position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
                         <span className="material-symbols-outlined" style={{ color: 'inherit', transition: 'color 0.3s' }}>download</span>
                     </button>

@@ -189,7 +189,7 @@ function App() {
             downloadLink=''
             genericLink='https://afry.com/en'
             genericLinkText='AFRY'
-            description="Making Future"
+            description="AFRY"
             longDescription= {""}
             onClick={() => openDialog({
               title: 'Book And Claim',
@@ -283,6 +283,7 @@ function App() {
             >
             </ProjectContainer> */}
             <CvContainer></CvContainer>
+
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>
           <div className='container' style={{position:"fixed",bottom:"1rem", right:"0rem"}}>
