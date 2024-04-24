@@ -143,8 +143,10 @@ button:focus-visible {
   /* border: red 1px solid; */
 
 }
+/* mobile mode */
 @media (max-width: 800px){
   .projectsRow{
+    
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -152,6 +154,7 @@ button:focus-visible {
     scrollbar-width: none; 
     -ms-overflow-style: none;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     /* padding: 2rem 0; */
 
     width: 100%;

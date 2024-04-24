@@ -19,6 +19,9 @@ function CvContainer() {
 
 
     function openDialog() {
+        if (window.innerWidth <= 768) {
+            downloadCv();
+        }
         setIsOpen(true);
         setIsLoading(true);
     }
