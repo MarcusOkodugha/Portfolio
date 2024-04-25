@@ -5,7 +5,11 @@
     gap: 1rem;
     justify-items: start;
     align-items: center;
+
+    
   }
+
+
   
   .technology-item {
     display: flex;
@@ -41,6 +45,10 @@
     gap: 1rem;
     justify-items: start;
     align-items: center;
+    width: 85%;
+
+    /* border: lightgreen 1px solid; */
+    margin-left: 1.5rem;
   }
   
   .technology-item {

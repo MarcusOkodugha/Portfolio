@@ -140,7 +140,6 @@ button:focus-visible {
   width: 100%;
 
   
-  /* border: red 1px solid; */
 
 }
 /* mobile mode */
@@ -155,10 +154,8 @@ button:focus-visible {
     -ms-overflow-style: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    /* padding: 2rem 0; */
 
     width: 100%;
-    /* border: red 1px solid; */
   
   }
 }

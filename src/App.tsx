@@ -224,6 +224,8 @@ function App() {
             >
             </ProjectContainer>
 
+            
+
             <ProjectContainer
             title="Chess"
             link=""
@@ -241,6 +243,9 @@ function App() {
               technologies: [
                 {imgPath: "../assets/java.jpg", title: "Java"},
                 {imgPath: "../assets/JavaSwing.jpg", title: "Java Swing"},
+                {imgPath: "../assets/javafx.jpg", title: "JavaFX"},
+                {imgPath: "../assets/junit.jpg", title: "JUnit"},
+
               ],
               useWebsiteContainer: false,
               showImage:true,
@@ -251,6 +256,44 @@ function App() {
             showImage={true}
             imgPath='../assets/Chess.png'
             imgWidth='55%'
+            >
+            </ProjectContainer>
+
+            <ProjectContainer
+            title="Apple Store"
+            link=""
+            gitLink=''
+            downloadLink=''
+            genericLink=''
+            genericLinkText=''
+            description="Det bästa stället att
+            köpa dina favoritprodukter"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Apple Store Clone',
+              link: '',
+              gitLink: '',
+              downloadLink: '',
+              genericLink:'https://afry.com/en',
+              genericLinkText:'Det bästa stället att köpa dina favoritprodukter.',
+              description: "",
+              longDescription:"In the fall of 2023, as part of a course on Distributed Systems at KTH Royal Institute of Technology, I developed a web application that closely mirrors the functionality of an Apple Web Store. This project was implemented using Java Server Pages (JSP), integrating MySQL for database management. \n\n"+
+              "The application showcases a distributed system's principles by enabling efficient data handling and user interaction in a simulated e-commerce environment. \n\n"+
+              "I chose to replicate the Apple Web Store because I admire their design principles and the methodologies they apply regarding UI and UX. This project not only honed my skills in JSP and MySQL but also enhanced my insights into the architectural design and management of distributed systems.",
+              technologies: [
+                {imgPath: "../assets/jsp.jpg", title: "JSP"},
+                {imgPath: "../assets/java.jpg", title: "Java"},
+                {imgPath: "../assets/mysql.jpg", title: "MySQL"},
+              ],
+              useWebsiteContainer: true,
+              showImage:false,
+              imgPath: '../assets/AppleStore.png',
+              imgWidth: "77%",
+            })}
+            useWebsiteContainer={true}
+            showImage={false}
+            imgPath='../assets/AppleStore.png'
+            imgWidth='100%'
             >
             </ProjectContainer>
 

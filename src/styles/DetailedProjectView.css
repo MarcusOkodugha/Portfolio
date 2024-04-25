@@ -47,9 +47,14 @@
       height: fit-content;
     }
     .center-img {
-      display: block;
+      /* display: block;
       height: auto;
-      width: 85%;
+      width: 85%; */
+      display: flex;           
+      justify-content: center; 
+      align-items: center;     
+      width: 100%;
+      height: auto;
     }
     .p-img{
       width: 100%;
@@ -144,17 +149,19 @@
   .left-flex-col-container{
     display: flex;
     flex-direction: column;
-   
-    justify-content: start;
-    margin-left: 2rem;
+    justify-content: center;
+    width: 43rem;
+    /* border: 1px solid red; */
   }
-    .computer {
-      width: 40rem;
-      height: fit-content;
+  .computer {
+    width: 40rem;
     }
     .center-img {
-      display: block;
-      max-width: 38rem;
+      display: flex;           
+      justify-content: center; 
+      align-items: center;     
+      width: 100%;
+      height: auto;
     }
     .description{
       width: 100%;
@@ -179,6 +186,8 @@
     }
   
     .tech-stack-row {
+      display: flex;
+      justify-content: center;
       margin-top: 2rem;
     }
   
