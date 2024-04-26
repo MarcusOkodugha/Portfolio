@@ -272,7 +272,7 @@ function App() {
             onClick={() => openDialog({
               title: 'Apple Store Clone',
               link: '',
-              gitLink: '',
+              gitLink: 'https://github.com/KTH-awaken/DistLab1',
               downloadLink: '',
               genericLink:'https://afry.com/en',
               genericLinkText:'Det bästa stället att köpa dina favoritprodukter.',

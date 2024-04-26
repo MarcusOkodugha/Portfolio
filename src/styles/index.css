@@ -155,6 +155,9 @@ button:focus-visible {
     scroll-behavior: smooth;
     overflow-x: hidden;
 
+    /* background-color: red; */
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
   
   }
