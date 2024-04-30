@@ -4,8 +4,6 @@ import "../styles/index.css";
 import { downloadCv } from "../Util";
 import CvSkeleton from "./CvSkeleton";
 
-
-
 function CvContainer() {
     const [isOpen, setIsOpen] = useState(false);
     const dialogRef = useRef(null);
@@ -16,7 +14,6 @@ function CvContainer() {
             setIsLoading(false); 
         }, 1000);
     };
-
 
     function openDialog() {
         if (window.innerWidth <= 768) {

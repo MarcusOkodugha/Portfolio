@@ -1,6 +1,6 @@
 
 import Navbar from './components/Navbar'
-import Title from './components/Title'
+// import Title from './components/Title'
 import ProjectContainer from './components/ProjectContainer'
 import  { useRef ,useState} from 'react';
 import ScrollButton from './components/ScrollButton';
@@ -10,6 +10,7 @@ import { DarkModeProvider } from './contexts/DarkModeContext';
 import { ProjectContainerProps } from './types';
 import DetailedProjectView from './components/DetailedProjectView';
 import CvContainer from './components/CvContainer';
+import Typewriter from './components/Typewriter';
 
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
       <DarkModeProvider>
         <div className='container'>
           <div className='top-bar'>
-            <Title></Title>
+            {/* <Title></Title> */}
+            <Typewriter></Typewriter>
             <ContactButton></ContactButton>
           </div>
         </div>
@@ -104,6 +106,7 @@ function App() {
             showImage={false}
             >
             </ProjectContainer>
+
             {/* <ProjectContainer
             title="Health Tracker"
             link="https://user-interface.app.cloud.cbh.kth.se/"
@@ -137,6 +140,7 @@ function App() {
             showImage={false}
             >
             </ProjectContainer> */}
+
             <ProjectContainer
             title="Campus"
             link=""
@@ -223,8 +227,6 @@ function App() {
             imgWidth='100%'
             >
             </ProjectContainer>
-
-            
 
             <ProjectContainer
             title="Chess"
@@ -329,7 +331,7 @@ function App() {
 
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>
-          <div className='container' style={{position:"fixed",bottom:"1rem", right:"0rem"}}>
+          <div style={{position:"fixed",bottom:"1rem", right:"1rem", }}>
             <Navbar></Navbar>
           </div>
       </DarkModeProvider>

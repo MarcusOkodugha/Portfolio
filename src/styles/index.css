@@ -52,6 +52,8 @@ body.dark { /*darkmode*/
 }
 
 .container{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   margin-left: 5rem;
   margin-right: 1rem;
   /* border: red 1px solid; */
@@ -145,7 +147,6 @@ button:focus-visible {
 /* mobile mode */
 @media (max-width: 800px){
   .projectsRow{
-    
     display: flex;
     flex-direction: column;
     overflow-y: auto;
