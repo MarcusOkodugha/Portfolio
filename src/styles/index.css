@@ -126,6 +126,13 @@ button:focus-visible {
   gap: 1rem;
   
 }
+/* dektop mode */
+@media (min-width: 800px) {
+  .projectsRow{
+    padding-top: 2rem;
+    /* border: solid 1px red; */
+  }
+}
 
 .projectsRow {
   box-sizing: border-box;
@@ -137,11 +144,11 @@ button:focus-visible {
   scrollbar-width: none; 
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-  padding-top: 2rem;
+  
+  
+  
   padding-bottom: 4rem;
   width: 100%;
-
-  
 
 }
 /* mobile mode */
@@ -155,12 +162,14 @@ button:focus-visible {
     -ms-overflow-style: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    padding-top:0rem;
 
     /* background-color: red; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
-  
+    /* border: solid 1px green; */
+    
   }
 }
 

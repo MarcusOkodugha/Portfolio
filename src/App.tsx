@@ -72,6 +72,8 @@ function App() {
               <ScrollButton direction="right" onClick={() => scrollHorizontally('right')} />
             <div className='spacer'></div>
 
+            <CvContainer></CvContainer>
+
             <ProjectContainer
             title="Cloud Saver"
             link="https://mvk-cloudsaver-frontend-eg58.vercel.app/"
@@ -327,7 +329,6 @@ function App() {
             imgWidth='55%'
             >
             </ProjectContainer> */}
-            <CvContainer></CvContainer>
 
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>
