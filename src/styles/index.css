@@ -156,14 +156,12 @@ button:focus-visible {
   .projectsRow{
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     gap: 1rem; 
     scrollbar-width: none; 
     -ms-overflow-style: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
     padding-top:0rem;
-
     /* background-color: red; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
