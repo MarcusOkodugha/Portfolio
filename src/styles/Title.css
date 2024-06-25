@@ -11,7 +11,7 @@
 .main-title-text{
     font-size: 3em;
     display: inline-block;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI','Helvetica Neue', Arial, sans-serif;
     line-height: 1.2;
     font-weight: 500;
 }

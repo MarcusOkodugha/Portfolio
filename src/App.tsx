@@ -1,6 +1,5 @@
 
 import Navbar from './components/Navbar'
-// import Title from './components/Title'
 import ProjectContainer from './components/ProjectContainer'
 import  { useRef ,useState} from 'react';
 import ScrollButton from './components/ScrollButton';
