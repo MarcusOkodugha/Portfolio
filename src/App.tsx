@@ -40,7 +40,7 @@ function App() {
   };
 
   return (
-      <DarkModeProvider>
+      <DarkModeProvider >
         <div className='container'>
           <div className='top-bar'>
             {/* <Title></Title> */}
@@ -66,7 +66,8 @@ function App() {
 
         />
       )}
-          
+        <div className='center-section'>
+
           <div ref={scrollContainerRef} className='projectsRow'>
               <ScrollButton direction="left" onClick={() => scrollHorizontally('left')} />
               <ScrollButton direction="right" onClick={() => scrollHorizontally('right')} />
@@ -335,6 +336,8 @@ function App() {
           <div style={{position:"fixed",bottom:"1rem", right:"1rem", }}>
             <Navbar></Navbar>
           </div>
+        </div>
+
       </DarkModeProvider>
   )
 }

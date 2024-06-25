@@ -38,9 +38,15 @@
             /* border: firebrick 1px solid; */
         }
     }
-    @media (min-width: 2000px) {
+    @media (min-width: 800px)and (min-height:1000px) {
         .card{
             width: 55rem;
             height: 42rem;
+        }
+    }
+    @media (min-width: 800px)and (min-height:1200px) {
+        .card{
+            width: 69rem;
+            height: 50rem;
         }
     }
