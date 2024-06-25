@@ -56,4 +56,25 @@
     border: none;
     /* border: solid 4px red; */
   }
+  /* large desktop */
+  @media (min-height:1000px){
+    .iframe{
+      width: 286%;
+      height: 286%; 
+      transform: scale(0.35);
+    }
+  }
+  /* xl desktop */
+  @media (min-height:1200px){
+    .iframe{
+      width: 200%;
+      height: 200%; 
+      transform: scale(0.5);
+    }
+  }
+  .dialog-card .iframe{
+    width: 357%;
+    height: 358%;
+    transform: scale(0.28);
+  }
 }
