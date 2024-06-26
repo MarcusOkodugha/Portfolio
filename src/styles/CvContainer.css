@@ -31,13 +31,13 @@
     }
 }
 @media (min-width: 800px)and (min-height:1000px){
-    .cv-card{
-        height: 42rem !important;
-    }
-    @media (min-width: 800px)and (min-height:1200px) {
         .cv-card{
-            height: 50rem !important
-    ;
+            height: 42rem !important;
+        }
+    }
+@media (min-width: 800px)and (min-height:1200px) {
+        .cv-card{
+            height: 50rem !important;
         }
 }
 
