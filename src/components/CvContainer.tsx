@@ -43,7 +43,7 @@ function CvContainer() {
     return (
         <div onClick={openDialog}>
             <div className="cv-card">
-                <img src="./assets/CV.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%',scale:"1.05" }}></img>
+                <img src="./assets/CV.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%',scale:"1" }}></img>
                 <div style={{ display: "flex", width: "100%", justifyContent: "end", zIndex: "2", backgroundColor: "red" }}>
                     <button onClick={downloadCv} className="icon-button" style={{color:"black", position: "absolute", bottom: '10px', right: '10px', outline: "none", border: "none" }}>
                         <span className="material-symbols-outlined" style={{ color: 'inherit', transition: 'color 0.3s' }}>download</span>
