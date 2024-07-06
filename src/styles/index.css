@@ -151,7 +151,7 @@ button:focus-visible {
 /* dektop mode */
 @media (min-width: 800px) {
   .projectsRow{
-    padding-top: 2rem;
+    padding-top: 1rem;
     /* border: solid 1px red; */
   }
   body{
@@ -173,9 +173,6 @@ button:focus-visible {
   scrollbar-width: none; 
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-  
-  
-  
   padding-bottom: 4rem;
   width: 100%;
 

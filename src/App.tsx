@@ -69,7 +69,6 @@ function App() {
           <div ref={scrollContainerRef} className='projectsRow'>
               <ScrollButton direction="left" onClick={() => scrollHorizontally('left')} />
               <ScrollButton direction="right" onClick={() => scrollHorizontally('right')} />
-            <div className='spacer'></div>
 
             <CvContainer></CvContainer>
 
