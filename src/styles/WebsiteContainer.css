@@ -44,6 +44,7 @@
     left: 10.3%;
     width: 79.5%;
     height: 87%;
+
   }
   
   .iframe {
@@ -53,8 +54,7 @@
     height: 358%;
     transform: scale(0.28);
     transform-origin: 0 0;
-    border: none;
-    /* border: solid 4px red; */
+    border-bottom: solid 5px black;
   }
   /* large desktop */
   @media (min-height:1000px){
