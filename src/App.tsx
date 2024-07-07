@@ -273,7 +273,7 @@ function App() {
             onClick={() => openDialog({
               title: 'Journal System',
               link: 'https://user-interface.app.cloud.cbh.kth.se/',
-              gitLink: 'https://github.com/KTH-awaken/mvk-cloudsaver-frontend',
+              gitLink: 'https://github.com/orgs/KTH-awaken/repositories',
               description: "journal System Streamlining Health Management",
               longDescription: "This health journaling platform uses React.js for its interface and Node.js for backend operations, including image uploads.\n\n"+
               "Security is handled through Keycloak.\n\n"+
