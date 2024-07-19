@@ -74,12 +74,12 @@ function App() {
 
             <ProjectContainer
             title="Cloud Saver"
-            link="https://mvk-cloudsaver-frontend-eg58.vercel.app/"
+            link="https://mvk-cloudsaver-frontend.vercel.app/"
             description="Elevate Your Cloud Economy"
             longDescription= {""}
             onClick={() => openDialog({
               title: 'Cloud Saver',
-              link: 'https://mvk-cloudsaver-frontend-eg58.vercel.app/',
+              link: 'https://mvk-cloudsaver-frontend.vercel.app/',
               gitLink: 'https://github.com/KTH-awaken/mvk-cloudsaver-frontend',
               description: "Cloud Saver Harnessing Kubernetes for Efficient Cloud Management",
               longDescription: "In an era where cloud infrastructure is paramount, CloudSaver emerges as an essential service for optimizing cloud performance and energy consumption. This innovative platform, designed for the Kubernetes ecosystem—which powers a significant majority of cloud deployments—offers a seamless and scalable solution to monitor and manage cloud usage effectively.\n\n"+
