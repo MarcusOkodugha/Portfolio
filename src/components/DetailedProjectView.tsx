@@ -74,8 +74,8 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
               <div className='links'>
                 {props.link &&<a href={props.link} target="_blank" rel="noopener noreferrer">Visit Project Website</a>}
                 {props.downloadLink &&<a href={props.downloadLink} target="_blank" rel="noopener noreferrer">Download App</a>}
-                {props.gitLink &&<a href={props.gitLink} target="_blank" rel="noopener noreferrer">GitHub</a>}
                 {props.genericLink &&<a href={props.genericLink} target="_blank" rel="noopener noreferrer">{props.genericLinkText}</a>}
+                {props.gitLink &&<a href={props.gitLink} target="_blank" rel="noopener noreferrer">GitHub</a>}
               </div>
             </div>
               </div>

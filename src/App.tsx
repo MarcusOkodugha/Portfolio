@@ -41,7 +41,6 @@ function App() {
       <DarkModeProvider >
         <div className='container'>
           <div className='top-bar'>
-            {/* <Title></Title> */}
             <Typewriter></Typewriter>
             <ContactButton></ContactButton>
           </div>
@@ -53,6 +52,8 @@ function App() {
           link={selectedProject.link}
           gitLink={selectedProject.gitLink}
           downloadLink={selectedProject.downloadLink}
+          genericLink={selectedProject.genericLink}
+          genericLinkText={selectedProject.genericLinkText}
           description={selectedProject.description}
           longDescription={selectedProject.longDescription}
           close={closeDialog}
@@ -307,30 +308,28 @@ function App() {
             <ProjectContainer
             title="Auction House"
             link=""
+            genericLink='https://www.youtube.com/watch?v=sDAsCNQboWk'
+            genericLinkText='YouTube'
             description="Home of only the finest art"
             longDescription= {""}
             onClick={() => openDialog({
               title: 'Auction House',
               link: '',
-              gitLink: 'https://github.com/orgs/KTH-awaken/repositories',
+              gitLink: 'https://github.com/KTH-awaken/DistLab2',
+              genericLink:'https://www.youtube.com/watch?v=sDAsCNQboWk',
+              genericLinkText:'YouTube',
               description: "Home of only the finest art",
-              longDescription: "This health journaling platform uses React.js for its interface and Node.js for backend operations, including image uploads.\n\n"+
-              "Security is handled through Keycloak.\n\n"+
-              "MySQL, Docker, Kubernetes, and GitHub Actions support its infrastructure and deployment.",
+              longDescription:  
+              "This auction platform is built with .NET Blazor for its user interface, facilitating dynamic interactions for users to list, bid, and manage auction items seamlessly. The backend operations are managed through C Sharp, ensuring robust processing of auction dynamics and user transactions.\n\n"+
+              "SQLite serves as the database solution, providing efficient data handling and storage capabilities for the extensive user and auction item information. Tailwind CSS is integrated for styling, offering a modern and responsive design that enhances user experience on various devices.\n\n"+
+              "TypeScript is employed to enrich client-side scripting, adding interactivity and ensuring smooth user interfaces. The entire application is developed within the .NET ecosystem, leveraging its comprehensive libraries and frameworks to support the complex needs of online auctioning and bidding functions.",
               technologies: [
-                {imgPath: "../assets/react.jpg", title: "React.js"},
+                {imgPath: "../assets/blazor.jpg", title: ".Net Blazor"},
+                {imgPath: "../assets/cSharp.jpg", title: "C Sharp"},
+                {imgPath: "../assets/dotNet.jpg", title: ".NET"},
                 {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
-                {imgPath: "../assets/java.jpg", title: "Java"},
-                {imgPath: "../assets/springboot.jpg", title: "springboot"},
-                {imgPath: "../assets/junit.jpg", title: "JUnit"},
-                {imgPath: "../assets/mysql.jpg", title: "MySQL"},
-                {imgPath: "../assets/keycloack.jpg", title: "Keycloak"},
-                {imgPath: "../assets/quarkus.jpg", title: "Quarkus"},
-                {imgPath: "../assets/nodejs.jpg", title: "Node.js"},
+                {imgPath: "../assets/sqlLite.jpg", title: "SQLite"},
                 {imgPath: "../assets/tailwind.jpg", title: "Tailwind"},
-                {imgPath: "../assets/github-actions.jpg", title: "Actions"},
-                {imgPath: "../assets/kubernets.jpg", title: "Kubernetes"},
-                {imgPath: "../assets/docker.jpg", title: "Docker"},
               ],
               useWebsiteContainer: true,
               showImage: false,
