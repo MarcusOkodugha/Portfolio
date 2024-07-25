@@ -243,8 +243,6 @@ function App() {
               link: '',
               gitLink: 'https://github.com/KTH-awaken/DistLab1',
               downloadLink: '',
-              genericLink:'https://afry.com/en',
-              genericLinkText:'Det bästa stället att köpa dina favoritprodukter.',
               description: "",
               longDescription:"In the fall of 2023, as part of a course on Distributed Systems at KTH Royal Institute of Technology, I developed a web application that closely mirrors the functionality of an Apple Web Store. This project was implemented using Java Server Pages (JSP), integrating MySQL for database management. \n\n"+
               "The application showcases a distributed system's principles by enabling efficient data handling and user interaction in a simulated e-commerce environment. \n\n"+
