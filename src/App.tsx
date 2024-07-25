@@ -304,6 +304,45 @@ function App() {
             imgWidth=''
             >
             </ProjectContainer> 
+            <ProjectContainer
+            title="Auction House"
+            link=""
+            description="Home of only the finest art"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Auction House',
+              link: '',
+              gitLink: 'https://github.com/orgs/KTH-awaken/repositories',
+              description: "Home of only the finest art",
+              longDescription: "This health journaling platform uses React.js for its interface and Node.js for backend operations, including image uploads.\n\n"+
+              "Security is handled through Keycloak.\n\n"+
+              "MySQL, Docker, Kubernetes, and GitHub Actions support its infrastructure and deployment.",
+              technologies: [
+                {imgPath: "../assets/react.jpg", title: "React.js"},
+                {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
+                {imgPath: "../assets/java.jpg", title: "Java"},
+                {imgPath: "../assets/springboot.jpg", title: "springboot"},
+                {imgPath: "../assets/junit.jpg", title: "JUnit"},
+                {imgPath: "../assets/mysql.jpg", title: "MySQL"},
+                {imgPath: "../assets/keycloack.jpg", title: "Keycloak"},
+                {imgPath: "../assets/quarkus.jpg", title: "Quarkus"},
+                {imgPath: "../assets/nodejs.jpg", title: "Node.js"},
+                {imgPath: "../assets/tailwind.jpg", title: "Tailwind"},
+                {imgPath: "../assets/github-actions.jpg", title: "Actions"},
+                {imgPath: "../assets/kubernets.jpg", title: "Kubernetes"},
+                {imgPath: "../assets/docker.jpg", title: "Docker"},
+              ],
+              useWebsiteContainer: true,
+              showImage: false,
+              imgPath: '../assets/auktionHouse.png',
+              imgWidth: "",
+            })}
+            useWebsiteContainer={true}
+            showImage={false}
+            imgPath='../assets/auktionHouse.png'
+            imgWidth=''
+            >
+            </ProjectContainer> 
 
             {/* <ProjectContainer
             title="Terraformer"
