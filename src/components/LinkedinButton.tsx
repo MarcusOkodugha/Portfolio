@@ -16,7 +16,7 @@ function LinkedinButton() {
           height="100%"
           viewBox="0 0 24 24"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             d="M18 22V15C18 13.8954 17.1046 13 16 13C14.8954 13 14 13.8954 14 15V22H10"
