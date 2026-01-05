@@ -158,8 +158,8 @@ function App() {
             link=""
             gitLink='https://github.com/jayant-yadav/TruthSeeker'
             downloadLink=''
-            genericLink=''
-            genericLinkText=''
+            genericLink='https://www.linkedin.com/feed/update/urn:li:activity:7307031197698678784/?originTrackingId=OatRzTuNGgxnbhykktMfVg%3D%3D'
+            genericLinkText='Lern more'
             description="AI driven real time fact checking"
             longDescription= {""}
             onClick={() => openDialog({
@@ -167,8 +167,8 @@ function App() {
               link: '',
               gitLink: 'https://github.com/jayant-yadav/TruthSeeker',
               downloadLink: '',
-              genericLink:'',
-              genericLinkText:'',
+              genericLink:'https://www.linkedin.com/feed/update/urn:li:activity:7307031197698678784/?originTrackingId=OatRzTuNGgxnbhykktMfVg%3D%3D',
+              genericLinkText:'Lern more',
               description: "AI driven real time fact checking",
               longDescription:
               "TruthSeeker is a real time AI fact checking service developed at Google Impact Hack 2025, where our team placed second following a direct invitation from Google. The project focuses on increasing transparency and accountability in live public discussions.\n\n"+
