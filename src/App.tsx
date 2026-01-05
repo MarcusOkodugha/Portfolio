@@ -153,6 +153,44 @@ function App() {
             >
             </ProjectContainer>
 
+                        <ProjectContainer
+            title="TruthSeaker"
+            link=""
+            gitLink='https://github.com/jayant-yadav/TruthSeeker'
+            downloadLink=''
+            genericLink=''
+            genericLinkText=''
+            description="AI driven real time fact checking"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'TruthSeaker',
+              link: '',
+              gitLink: 'https://github.com/jayant-yadav/TruthSeeker',
+              downloadLink: '',
+              genericLink:'',
+              genericLinkText:'',
+              description: "AI driven real time fact checking",
+              longDescription:
+              "TruthSeeker is a real time AI fact checking service developed at Google Impact Hack 2025, where our team placed second following a direct invitation from Google. The project focuses on increasing transparency and accountability in live public discussions.\n\n"+
+              "The system analyzes live audio and video streams and verifies factual claims as they are made, providing immediate insight during debates, interviews, and broadcasts without disrupting the conversation.\n\n"+
+              "TruthSeeker was developed together with Slava Primenko, Jayant Yadav, and Mateusz Herczka, in collaboration with Google, AI Sweden, and Cillers, with expert support from Örjan Jansson at WWF. The project demonstrates applied AI in real time environments, rapid execution under extreme time constraints, and strong cross functional teamwork.",
+                            technologies: [
+                {imgPath: "../assets/react.jpg", title: "React.js"},
+                {imgPath: "../assets/typescript.jpg", title: "TypeScript"},
+                {imgPath: "../assets/Python-logo-notext.svg.png", title: "Python"},
+              ],
+              useWebsiteContainer: true,
+              showImage:false,
+              imgPath: '../assets/truth-seeker-screenshot.png',
+              imgWidth: "77%",
+            })}
+            useWebsiteContainer={true}
+            showImage={false}
+            imgPath='../assets/truth-seeker-screenshot.png'
+            imgWidth='100%'
+            >
+            </ProjectContainer>
+
             <ProjectContainer
             title="Book And Claim"
             link=""
@@ -173,7 +211,7 @@ function App() {
               longDescription:"In the spring of 2023, I assumed the role of product owner for a pioneering sustainability and enterprise system developed for Afry, a consulting leader in sustainability. This system, built under a strict non-disclosure agreement (NDA), integrates advanced technology to enhance sustainable practices across industries. Due to confidentiality constraints, the specifics of the system's functionalities remain undisclosed. However, I can highlight the sophisticated technology stack utilized in its creation.\n\n" +
               "The development employed Angular for crafting a dynamic user interface, complemented by NgRx for state management, ensuring a reactive and consistent experience. Angular Material provided a suite of design components for a sleek, modern look and feel. The server-side logic was powered by .NET Core, with C Sharp as the primary programming language, offering robust performance and scalability. Azure cloud services were crucial for hosting and data management, providing a secure and scalable infrastructure. TypeScript brought strong typing to JavaScript, enhancing the maintainability and reliability of the codebase. GitHub Actions automated the continuous integration and deployment processes, streamlining development and ensuring high-quality outputs.\n\n"+
               "As product owner, my responsibility was to orchestrate these technologies into a seamless and effective system that supports Afry's strategic goals in sustainability and EUs 2050 Taxonomy goal. This project not only highlights my expertise in managing complex technological solutions but also reflects my commitment to leveraging technology for environmental stewardship.",
-              technologies: [
+                            technologies: [
                 {imgPath: "../assets/angular.jpg", title: "Angular"},
                 {imgPath: "../assets/ngRx.jpg", title: "NgRx"},
                 {imgPath: "../assets/angularMaterial.jpg", title: "Angular Material"},
