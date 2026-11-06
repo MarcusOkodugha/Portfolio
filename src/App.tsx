@@ -50,6 +50,7 @@ function App() {
         <DetailedProjectView 
           title={selectedProject.title}
           link={selectedProject.link}
+          phoneLink={selectedProject.phoneLink}
           gitLink={selectedProject.gitLink}
           downloadLink={selectedProject.downloadLink}
           genericLink={selectedProject.genericLink}
@@ -72,6 +73,40 @@ function App() {
               <ScrollButton direction="right" onClick={() => scrollHorizontally('right')} />
               <div className='spacer'></div>
             <CvContainer></CvContainer>
+
+            <ProjectContainer
+            title="Exodia"
+            link="https://exodia.marcusokodugha.workers.dev/?demo"
+            phoneLink="https://exodia.marcusokodugha.workers.dev/?demo"
+            description="A self-improving AI training log"
+            longDescription= {""}
+            onClick={() => openDialog({
+              title: 'Exodia',
+              link: 'https://exodia.marcusokodugha.workers.dev/?demo',
+              phoneLink: 'https://exodia.marcusokodugha.workers.dev/?demo',
+              gitLink: 'https://github.com/MarcusOkodugha/exodia',
+              genericLink: 'https://exodia.marcusokodugha.workers.dev/join',
+              genericLinkText: 'Get your own Exodia',
+              description: "Talk, type or paste a workout. AI logs it, agents keep improving it.",
+              longDescription:
+              "Exodia is a training log you just talk to. Say, type or paste a workout in any language, like \"bench 100 for 5, three sets\", and an LLM turns it into structured sets in about two seconds. It runs on the web as an installable PWA with no account, no app store and no setup: open the link and you are logging within 15 seconds. It works offline and syncs across devices.\n\n" +
+              "It also improves itself. Exodia is built and run by AI agents, with me as the human in the loop. Users send feedback from inside the app, it lands in my admin panel, and one tap on Build it starts an agentic loop: the Worker fires a Claude Code routine through its API trigger, with failover across two Claude accounts, and an autonomous coding agent picks the request up in a fresh cloud session. The repo is its harness: a CLAUDE.md spec with the architecture, design system and guardrails, a shared task list, and a Playwright visual regression sweep of every page at 393, 375 and 1440 px, as admin and as a regular user. The agent implements the change, runs the checks and commits to main. Cloudflare Workers Builds deploys it within a minute, a service worker cache bump rolls it out to every phone, and an in-app changelog tells users what's new. Parallel agent sessions each own one area of the app and coordinate through git and shared notes. Users ask, I approve, agents build, test and ship: over 300 releases so far.\n\n" +
+              "Behind the box is a multi-model AI pipeline on Cloudflare Workers. Claude and Gemini return schema-constrained JSON, quota-aware routing benches a model once its daily quota is spent, per-model timeouts fall back to the next model, and Whisper on Workers AI handles speech to text. Every request is logged with its latency and the models it tried. Imports read CSV, Excel, JSON and exports from Strong, Hevy and FitNotes on the device: ten years of history in about a second, with a sanity check that holds back sets that look like typos.\n\n" +
+              "The analytics go deep: estimated one-rep max with the Brzycki and Epley formulas, strength levels against Strength Level's bodyweight standards on a spider chart and an anatomy map, recovery per body part, PR detection, weekly volume, a GitHub-style calendar of every session, and your most impressive lift ranked against every raw OpenPowerlifting meet result and UN population data.",
+              technologies: [
+                {imgPath: "../assets/claude.jpg", title: "Claude"},
+                {imgPath: "../assets/gemini.jpg", title: "Gemini"},
+                {imgPath: "../assets/cloudflare.jpg", title: "Cloudflare"},
+                {imgPath: "../assets/javascript.jpg", title: "JavaScript"},
+                {imgPath: "../assets/sqlLite.jpg", title: "SQLite"},
+              ],
+              useWebsiteContainer: true,
+              showImage: false,
+            })}
+            useWebsiteContainer={true}
+            showImage={false}
+            >
+            </ProjectContainer>
 
             <ProjectContainer
             title="Cloud Saver"

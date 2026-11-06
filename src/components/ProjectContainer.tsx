@@ -1,5 +1,6 @@
 import Card from './Card'
 import WebsiteContainer from './WebsiteContainer'
+import DevicePreview from './DevicePreview'
 import { ProjectContainerProps } from '../types';
 
 interface ProjectContainerExtendedProps extends ProjectContainerProps {
@@ -25,7 +26,8 @@ function ProjectContainer(props: ProjectContainerExtendedProps, ){
             <div className="description-text"style={{fontFamily: "arial", fontWeight: "", paddingBottom: "2rem"}}>
               {props.description}
             </div>
-            {props.useWebsiteContainer && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
+            {props.phoneLink && <DevicePreview link={props.link} phoneLink={props.phoneLink}></DevicePreview>}
+            {props.useWebsiteContainer && !props.phoneLink && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
             {props.showImage && 
             <div style={{display:"flex", width:"100%",  justifyContent: "center"}}>
               <img src={props.imgPath} alt={props.title} style={{width: props.imgWidth, height: "auto"}}></img>

@@ -3,6 +3,7 @@ import React from 'react';
 import { ProjectContainerProps } from '../types';
 import '../styles/DetailedProjectView.css'; 
 import WebsiteContainer from './WebsiteContainer';
+import DevicePreview from './DevicePreview';
 import Technologies from './Technologies';
 import  { useEffect } from 'react';
 
@@ -56,7 +57,8 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
             <div className='center-row'>
               <div className='left-flex-col-container'>
                 <div className='computer'>
-                  {props.useWebsiteContainer && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
+                  {props.phoneLink && <DevicePreview link={props.link} phoneLink={props.phoneLink}></DevicePreview>}
+                  {props.useWebsiteContainer && !props.phoneLink && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
                 </div>
                 <div className='center-img'>
                     {props.showImage &&<img src={props.imgPath} alt={props.title} style={{width: props.imgWidth, height: "auto"}}></img>}
@@ -93,7 +95,8 @@ function DetailedProjectView(props: DetailedProjectViewProps) {
           <div className='center-row'>
               <div className='computer'>
                 {/* {props.link && props.useWebsiteContainer && <WebsiteContainer link={props.link}></WebsiteContainer>} */}
-                {props.useWebsiteContainer && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
+                {props.phoneLink && <DevicePreview link={props.link} phoneLink={props.phoneLink}></DevicePreview>}
+                  {props.useWebsiteContainer && !props.phoneLink && <WebsiteContainer link={props.link} imgPath={props.imgPath}></WebsiteContainer>}
 
               </div>
               <div className='center-img'>

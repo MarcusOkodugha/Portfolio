@@ -1,0 +1,169 @@
+/* On the card the switch sits on the title row, top right; in the detail view it sits centred above the device. */
+.card:has(.devicePreview) {
+  position: relative;
+}
+
+.deviceSwitch {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 2;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--background);
+}
+
+.dialog-card .deviceSwitch {
+  position: static;
+  width: max-content;
+  margin: 0 auto 1rem;
+}
+
+.deviceSwitch button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deviceSwitch button .material-symbols-outlined {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.deviceSwitch button:hover {
+  opacity: 0.75;
+}
+
+.deviceSwitch button:focus {
+  outline: none;
+}
+
+.deviceSwitch button:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.deviceSwitch button[aria-selected='true'] {
+  background: var(--card);
+  opacity: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.deviceStage {
+  position: relative;
+}
+
+.deviceComputer,
+.devicePhone {
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0s linear 0s;
+}
+
+.devicePhone {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.devicePreview[data-device='computer'] .devicePhone,
+.devicePreview[data-device='phone'] .deviceComputer {
+  opacity: 0;
+  transform: scale(0.97);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0s linear 0.35s;
+}
+
+/* Silver iPhone 18 Pro Max: brushed silver band, thin black border, Dynamic Island, 440 × 956 screen. */
+.iphone {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  aspect-ratio: 0.4775;
+  padding: 1.1%;
+  border-radius: 14.5% / 6.9%;
+  background: linear-gradient(90deg, #a9abae 0%, #e9eaec 3%, #d3d5d8 12%, #f2f3f4 50%, #d3d5d8 88%, #e9eaec 97%, #a9abae 100%);
+  box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.25), 0 14px 30px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.iphoneScreen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: calc(7px * var(--s, 0.3)) solid #0b0b0c;
+  border-radius: 13.6% / 6.3%;
+  background: #f7f5f0;
+}
+
+.iphoneKey {
+  position: absolute;
+  width: 0.9%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #9fa1a4, #e4e5e7);
+}
+
+.iphoneAction { left: -0.7%; top: 17%; height: 4%; }
+.iphoneVolUp { left: -0.7%; top: 24%; height: 7%; }
+.iphoneVolDown { left: -0.7%; top: 33%; height: 7%; }
+.iphonePower { right: -0.7%; top: 27%; height: 10%; background: linear-gradient(270deg, #9fa1a4, #e4e5e7); }
+.iphoneCamera { right: -0.7%; top: 52%; height: 6%; background: linear-gradient(270deg, #9fa1a4, #e4e5e7); }
+
+.iphoneStatus {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(56px * var(--s));
+  padding: 0 calc(38px * var(--s)) 0 calc(44px * var(--s));
+  color: #1c1c1e;
+  font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', arial, sans-serif;
+  font-size: calc(17px * var(--s));
+  font-weight: 600;
+}
+
+.iphoneIsland {
+  position: absolute;
+  top: calc(11px * var(--s));
+  left: 50%;
+  width: calc(120px * var(--s));
+  height: calc(35px * var(--s));
+  border-radius: 999px;
+  background: #000;
+  transform: translateX(-50%);
+}
+
+.iphoneBattery {
+  width: calc(26px * var(--s));
+  height: calc(12.5px * var(--s));
+  border-radius: calc(4px * var(--s));
+  background: #1c1c1e;
+}
+
+.iphoneApp {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.iphoneApp iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  transform-origin: 0 0;
+}

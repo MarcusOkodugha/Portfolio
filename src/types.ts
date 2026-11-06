@@ -1,6 +1,7 @@
 export type ProjectContainerProps = {  
     title: string;
     link?: string;
+    phoneLink?: string;
     description?: string;
     longDescription?: string;
     technologies?: TechnologyProps[];
