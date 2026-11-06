@@ -10,6 +10,7 @@ import { ProjectContainerProps } from './types';
 import DetailedProjectView from './components/DetailedProjectView';
 import CvContainer from './components/CvContainer';
 import Typewriter from './components/Typewriter';
+import Credential from './components/Credential';
 
 
 function App() {
@@ -445,6 +446,7 @@ function App() {
 
             <div style={{ backgroundColor: "transparent" }}></div>
           </div>
+          <Credential></Credential>
           <div style={{position:"fixed",bottom:"1rem", right:"1rem", }}>
             <Navbar></Navbar>
           </div>

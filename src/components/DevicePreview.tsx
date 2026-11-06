@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import WebsiteContainer from './WebsiteContainer';
 import '../styles/DevicePreview.css';
 
 type DevicePreviewProps = {
@@ -11,12 +10,16 @@ type DevicePreviewProps = {
 const PHONE_WIDTH = 440;
 const FRAME_WIDTH = 457;
 const FRAME_EXTRA_HEIGHT = 17 + 56;
+// The computer shows the app at a laptop width (Exodia's desktop layout starts at 1024), so the text stays readable.
+const COMPUTER_WIDTH = 1180;
 
 function DevicePreview(props: DevicePreviewProps){
     const [device, setDevice] = useState<'computer' | 'phone'>('computer');
     const [phoneOpened, setPhoneOpened] = useState(false);
     const [fit, setFit] = useState({ scale: 0, height: 0 });
     const phoneRef = useRef<HTMLDivElement>(null);
+    const laptopRef = useRef<HTMLDivElement>(null);
+    const [laptop, setLaptop] = useState({ scale: 0, height: 0 });
 
     useEffect(() => {
         const phone = phoneRef.current;
@@ -26,8 +29,16 @@ function DevicePreview(props: DevicePreviewProps){
             if (scale > 0) setFit({ scale, height: phone.clientHeight / scale - FRAME_EXTRA_HEIGHT });
         };
         measure();
-        const observer = new ResizeObserver(measure);
+        const screen = laptopRef.current;
+        const measureLaptop = () => {
+            if (!screen) return;
+            const scale = screen.clientWidth / COMPUTER_WIDTH;
+            if (scale > 0) setLaptop({ scale, height: screen.clientHeight / scale });
+        };
+        measureLaptop();
+        const observer = new ResizeObserver(() => { measure(); measureLaptop(); });
         observer.observe(phone);
+        if (screen) observer.observe(screen);
         return () => observer.disconnect();
     }, []);
 
@@ -49,7 +60,13 @@ function DevicePreview(props: DevicePreviewProps){
             </div>
             <div className='deviceStage'>
                 <div className='deviceComputer'>
-                    <WebsiteContainer link={props.link}></WebsiteContainer>
+                    <div className='websiteContainer'>
+                        <div className='iframeContainer laptopScreen' ref={laptopRef}>
+                            {props.link && laptop.scale > 0 &&
+                                <iframe src={props.link} title='Computer preview'
+                                    style={{ width: COMPUTER_WIDTH, height: laptop.height, transform: `scale(${laptop.scale})` }}></iframe>}
+                        </div>
+                    </div>
                 </div>
                 <div className='devicePhone'>
                     <div className='iphone' ref={phoneRef} style={{ '--s': fit.scale } as React.CSSProperties}>

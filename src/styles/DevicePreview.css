@@ -18,7 +18,21 @@
 .dialog-card .deviceSwitch {
   position: static;
   width: max-content;
-  margin: 0 auto 1rem;
+  margin: 0 0 0.75rem auto;
+}
+
+.laptopScreen {
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.laptopScreen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  transform-origin: 0 0;
 }
 
 .deviceSwitch button {
