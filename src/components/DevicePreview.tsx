@@ -7,25 +7,27 @@ type DevicePreviewProps = {
     phoneLink: string;
 }
 
-// iPhone 18 Pro Max screen in points
+// iPhone 18 Pro Max in points: 440 × 956 screen, 6.5 black border and a 2 silver rim on each side, 56 status bar
 const PHONE_WIDTH = 440;
+const FRAME_WIDTH = 457;
+const FRAME_EXTRA_HEIGHT = 17 + 56;
 
 function DevicePreview(props: DevicePreviewProps){
     const [device, setDevice] = useState<'computer' | 'phone'>('computer');
     const [phoneOpened, setPhoneOpened] = useState(false);
     const [fit, setFit] = useState({ scale: 0, height: 0 });
-    const screenRef = useRef<HTMLDivElement>(null);
+    const phoneRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const screen = screenRef.current;
-        if (!screen) return;
+        const phone = phoneRef.current;
+        if (!phone) return;
         const measure = () => {
-            const scale = screen.clientWidth / PHONE_WIDTH;
-            if (scale > 0) setFit({ scale, height: screen.clientHeight / scale });
+            const scale = phone.clientWidth / FRAME_WIDTH;
+            if (scale > 0) setFit({ scale, height: phone.clientHeight / scale - FRAME_EXTRA_HEIGHT });
         };
         measure();
         const observer = new ResizeObserver(measure);
-        observer.observe(screen);
+        observer.observe(phone);
         return () => observer.disconnect();
     }, []);
 
@@ -50,19 +52,19 @@ function DevicePreview(props: DevicePreviewProps){
                     <WebsiteContainer link={props.link}></WebsiteContainer>
                 </div>
                 <div className='devicePhone'>
-                    <div className='iphone'>
+                    <div className='iphone' ref={phoneRef} style={{ '--s': fit.scale } as React.CSSProperties}>
                         <i className='iphoneKey iphoneAction'></i>
                         <i className='iphoneKey iphoneVolUp'></i>
                         <i className='iphoneKey iphoneVolDown'></i>
                         <i className='iphoneKey iphonePower'></i>
                         <i className='iphoneKey iphoneCamera'></i>
-                        <div className='iphoneScreen' style={{ '--s': fit.scale } as React.CSSProperties}>
+                        <div className='iphoneScreen'>
                             <div className='iphoneStatus'>
                                 <span>9:41</span>
                                 <i className='iphoneIsland'></i>
                                 <i className='iphoneBattery'></i>
                             </div>
-                            <div className='iphoneApp' ref={screenRef}>
+                            <div className='iphoneApp'>
                                 {phoneOpened && fit.scale > 0 &&
                                     <iframe src={props.phoneLink} title='Phone preview'
                                         style={{ width: PHONE_WIDTH, height: fit.height, transform: `scale(${fit.scale})` }}></iframe>}
